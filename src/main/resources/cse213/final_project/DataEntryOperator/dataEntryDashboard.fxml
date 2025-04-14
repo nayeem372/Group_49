@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.DataEntryDashboardController">
+    <Label layoutX="200" layoutY="30" style="-fx-font-size: 18px;" text="Data Entry Dashboard" />
+
+    <Button fx:id="newAppButton" layoutX="21.0" layoutY="81.0" onAction="#newAppButtonOnAction" prefWidth="200" text="New Application Entry" />
+    <Button layoutX="21.0" layoutY="129.0" onAction="#uploadDocsButtonOnAction" prefWidth="200" text="Upload Documents" />
+    <Button layoutX="21.0" layoutY="188.0" onAction="#flagAppButtonOnAction" prefWidth="200" text="Flag Applications" />
+    <Button layoutX="21.0" layoutY="243.0" onAction="#validateFormButtonOnAction" prefWidth="200" text="Validate Forms" />
+    <Button layoutX="21.0" layoutY="293.0" onAction="#assignTrackingButtonOnAction" prefWidth="200" text="Assign Tracking ID" />
+    <Button layoutX="21.0" layoutY="342.0" onAction="#recordSearchButtonOnAction" prefWidth="200" text="Search and Update Records" />
+</AnchorPane>
