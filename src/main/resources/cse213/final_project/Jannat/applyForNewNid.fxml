@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="552.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.ApplyForNewNid">
+   <children>
+      <TextField fx:id="citizenIdTextField" layoutX="151.0" layoutY="121.0" />
+      <Label layoutX="51.0" layoutY="54.0" prefHeight="26.0" prefWidth="160.0" text="Apply For New Nid" />
+      <Label layoutX="51.0" layoutY="120.0" prefHeight="26.0" prefWidth="78.0" text="Citizen Id:" />
+      <TextField fx:id="nameTextField" layoutX="151.0" layoutY="160.0" />
+      <Label layoutX="51.0" layoutY="159.0" prefHeight="26.0" prefWidth="78.0" text="Name:" />
+      <TextField fx:id="addressTextField" layoutX="151.0" layoutY="202.0" />
+      <Label layoutX="51.0" layoutY="201.0" prefHeight="26.0" prefWidth="78.0" text="Address:" />
+      <TextField fx:id="phoneNumberTextField" layoutX="151.0" layoutY="239.0" />
+      <Label layoutX="51.0" layoutY="238.0" prefHeight="26.0" prefWidth="90.0" text="Phone Number:" />
+      <TextField fx:id="birthCertificateNoTextField" layoutX="451.0" layoutY="121.0" />
+      <Label layoutX="330.0" layoutY="120.0" prefHeight="26.0" prefWidth="111.0" text="Birth Certificate No:" />
+      <TextField fx:id="emailTextField" layoutX="451.0" layoutY="160.0" />
+      <Label layoutX="383.0" layoutY="159.0" prefHeight="26.0" prefWidth="57.0" text="Email:" />
+      <Label layoutX="51.0" layoutY="284.0" prefHeight="26.0" prefWidth="90.0" text="Date of Birth:" />
+      <DatePicker fx:id="dateOfBirthDatePicker" layoutX="150.0" layoutY="284.0" prefHeight="26.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
