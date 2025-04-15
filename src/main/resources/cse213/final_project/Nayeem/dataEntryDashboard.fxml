@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.DataEntryDashboardController">
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.DataEntryDashboardController">
     <Label layoutX="200" layoutY="30" style="-fx-font-size: 18px;" text="Data Entry Dashboard" />
 
     <Button fx:id="newAppButton" layoutX="21.0" layoutY="81.0" onAction="#newAppButtonOnAction" prefWidth="200" text="New Application Entry" />

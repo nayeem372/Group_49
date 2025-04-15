@@ -1,22 +1,24 @@
-package cse213.final_project.DataEntryOperator;
+package cse213.final_project.Nayeem;
+
+import java.time.LocalDate;
 
 public class Applicant {
     private String fullName;
     private String fatherName;
     private String motherName;
     private String gender;
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
     private String phoneNumber;
     private String emailAddress;
     private String ApplicantId;
     private String division;
     private String district;
-    private String upazila;
+    private String upozila;
     private String union;
     private String villageOrWard;
-    private String postalCode;
+    private Integer postalCode;
 
-    public Applicant(String applicantId, String dateOfBirth, String district, String division, String emailAddress, String fatherName, String fullName, String gender, String motherName, String postalCode, String phoneNumber, String union, String upazila, String villageOrWard) {
+    public Applicant(String applicantId, LocalDate dateOfBirth, String district, String division, String emailAddress, String fatherName, String fullName, String gender, String motherName, String phoneNumber, Integer postalCode, String union, String upozila, String villageOrWard) {
         ApplicantId = applicantId;
         this.dateOfBirth = dateOfBirth;
         this.district = district;
@@ -26,10 +28,10 @@ public class Applicant {
         this.fullName = fullName;
         this.gender = gender;
         this.motherName = motherName;
-        this.postalCode = postalCode;
         this.phoneNumber = phoneNumber;
+        this.postalCode = postalCode;
         this.union = union;
-        this.upazila = upazila;
+        this.upozila = upozila;
         this.villageOrWard = villageOrWard;
     }
 
@@ -41,11 +43,11 @@ public class Applicant {
         ApplicantId = applicantId;
     }
 
-    public String getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -113,11 +115,11 @@ public class Applicant {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getPostalCode() {
+    public Integer getPostalCode() {
         return postalCode;
     }
 
-    public void setPostalCode(String postalCode) {
+    public void setPostalCode(Integer postalCode) {
         this.postalCode = postalCode;
     }
 
@@ -129,12 +131,12 @@ public class Applicant {
         this.union = union;
     }
 
-    public String getUpazila() {
-        return upazila;
+    public String getUpozila() {
+        return upozila;
     }
 
-    public void setUpazila(String upazila) {
-        this.upazila = upazila;
+    public void setUpozila(String upozila) {
+        this.upozila = upozila;
     }
 
     public String getVillageOrWard() {
@@ -153,15 +155,15 @@ public class Applicant {
                 ", fatherName='" + fatherName + '\'' +
                 ", motherName='" + motherName + '\'' +
                 ", gender='" + gender + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
                 ", division='" + division + '\'' +
                 ", district='" + district + '\'' +
-                ", upazila='" + upazila + '\'' +
+                ", upozila='" + upozila + '\'' +
                 ", union='" + union + '\'' +
                 ", villageOrWard='" + villageOrWard + '\'' +
-                ", postalCode='" + postalCode + '\'' +
+                ", postalCode=" + postalCode +
                 '}';
     }
 }
