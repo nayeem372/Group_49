@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="341.0" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.FormValidationController">
+    <Label layoutX="190" layoutY="20" style="-fx-font-size: 18px;" text="Validate Application Form" />
+
+    <Label layoutX="50" layoutY="80" text="Application ID:" />
+    <TextField fx:id="appIdField" layoutX="200" layoutY="75" prefWidth="250" />
+
+    <Button fx:id="validateButton" layoutX="200" layoutY="130" text="Run Validation" />
+    <TextArea fx:id="validationResultArea" layoutX="50" layoutY="180" prefHeight="102.0" prefWidth="500" />
+   <Button layoutX="14.0" layoutY="292.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="50.0" text="Back" />
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="526.0" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.RecordSearchController">
+    <Label layoutX="200" layoutY="20" style="-fx-font-size: 18px;" text="Search and Update Records" />
+
+    <Label layoutX="50.0" layoutY="81.0" text="Search By:" />
+    <ComboBox fx:id="searchTypeComboBox" layoutX="150.0" layoutY="76.0" prefWidth="150" />
+    <TextField fx:id="searchField" layoutX="310.0" layoutY="76.0" prefWidth="200" />
+
+    <Button layoutX="250.0" layoutY="131.0" onAction="#searchButtonOnAction" text="Search" />
+
+    <TextArea fx:id="resultArea" layoutX="42.0" layoutY="307.0" prefHeight="167.0" prefWidth="500" />
+   <Label layoutX="50.0" layoutY="203.0" prefHeight="17.0" prefWidth="64.0" text="Update By:" />
+   <ComboBox fx:id="updateByComboBox" layoutX="158.0" layoutY="198.0" prefWidth="150" />
+   <TextField fx:id="updatedataField" layoutX="318.0" layoutY="198.0" prefWidth="200" />
+   <Button layoutX="247.0" layoutY="253.0" onAction="#recordUpdateButtonOnAction" prefHeight="25.0" prefWidth="107.0" text="Record Update" />
+   <Button layoutX="29.0" layoutY="487.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="107.0" text="Back" />
+</AnchorPane>

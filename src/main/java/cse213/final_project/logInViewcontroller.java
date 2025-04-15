@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class logInViewcontroller
 {
     @javafx.fxml.FXML
@@ -16,6 +18,8 @@ public class logInViewcontroller
     }
 
     @javafx.fxml.FXML
-    public void logInOnAction(ActionEvent actionEvent) {
+    public void logInOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/dataEntryDashboard.fxml", actionEvent); {
+        }
     }
 }

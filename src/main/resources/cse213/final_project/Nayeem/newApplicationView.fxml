@@ -26,7 +26,7 @@
     <Label layoutX="50" layoutY="230" text="Date of Birth:" />
     <DatePicker fx:id="dobPicker" layoutX="200" layoutY="225" prefWidth="150" />
 
-    <Button layoutX="191.0" layoutY="683.0" onAction="#submitButtonOnAction" prefWidth="200" text="Submit Application" />
+    <Button layoutX="184.0" layoutY="658.0" onAction="#submitButtonOnAction" prefWidth="200" text="Submit Application" />
    <Label layoutX="50.0" layoutY="269.0" text="Phone Number:" />
    <TextField fx:id="phoneNumberField" layoutX="200.0" layoutY="264.0" prefWidth="300" />
    <Label layoutX="50.0" layoutY="313.0" text="Email Address:" />
@@ -46,4 +46,5 @@
    <TextField fx:id="unionField" layoutX="197.0" layoutY="560.0" prefWidth="300" />
    <Label layoutX="53.0" layoutY="604.0" prefHeight="17.0" prefWidth="101.0" text="Postal Code:" />
    <TextField fx:id="postalCodeField" layoutX="197.0" layoutY="600.0" prefWidth="300" />
+   <Button layoutX="34.0" layoutY="695.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="92.0" text="Back" />
 </AnchorPane>
