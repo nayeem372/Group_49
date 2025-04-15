@@ -3,7 +3,7 @@ package cse213.final_project.Jannat;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
-public class ApplyForNewNid
+public class ApplyForNewNidController
 {
     @javafx.fxml.FXML
     private TextField phoneNumberTextField;

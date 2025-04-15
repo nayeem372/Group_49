@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="552.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.ApplyForNewNid">
+<AnchorPane prefHeight="552.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.ApplyForNewNidController">
    <children>
       <TextField fx:id="citizenIdTextField" layoutX="151.0" layoutY="121.0" />
       <Label layoutX="51.0" layoutY="54.0" prefHeight="26.0" prefWidth="160.0" text="Apply For New Nid" />
