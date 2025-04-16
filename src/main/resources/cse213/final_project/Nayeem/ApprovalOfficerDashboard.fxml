@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="469.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Nayeem.ApprovalOfficerDashboardController">
+   <Label layoutX="170.0" layoutY="28.0" text="Approval Officer Dashboard">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <VBox layoutY="135.0" prefHeight="200.0" prefWidth="246.0">
+      <children>
+          <Button onAction="#approveFinalNIDOnAction" prefHeight="26.0" prefWidth="267.0" text="Approve Final NID Issuance" />
+          <Button onAction="#reviewFlaggedCasesOnAction" prefHeight="26.0" prefWidth="257.0" text="Review Flagged/Disputed Cases" />
+          <Button onAction="#providePrintingAuthorizationOnAction" prefHeight="26.0" prefWidth="261.0" text="Provide Printing Authorization" />
+          <Button onAction="#ensureApplicantInfoCorrectOnAction" prefHeight="26.0" prefWidth="258.0" text="Ensure Applicant Info is Correct" />
+          <Button onAction="#maintainApprovalLogsOnAction" prefHeight="26.0" prefWidth="255.0" text="Maintain Approval Logs" />
+          <Button onAction="#appealsOnAction" prefWidth="250" text="Handle Appeals for Rejected Applications" />
+          <Button onAction="#coordinateUnclearCasesOnAction" prefWidth="250" text="Coordinate with Verification Officers" />
+          <Button onAction="#followUpPendingApplicationsOnAction" prefHeight="16.0" prefWidth="250" text="Follow Up on Pending Applications" />
+      </children>
+   </VBox>
+   <Button layoutX="374.0" layoutY="393.0" mnemonicParsing="false" text="Log out" />
+</AnchorPane>
