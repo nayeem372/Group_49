@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 public class Goal5duplicateNidController
 {
     @javafx.fxml.FXML
-    private ComboBox nidStatusComboBox;
+    private ComboBox<String> nidStatusComboBox;
     @javafx.fxml.FXML
     private TextField addressTextField;
     @javafx.fxml.FXML
@@ -17,21 +17,19 @@ public class Goal5duplicateNidController
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
+        nidStatusComboBox.getItems().addAll("Found", "Lose");
 
-    @Deprecated
-    public void navigateToDuplicateNIDForm(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleFileUploadButtonAction(ActionEvent actionEvent) {
+    public void handleFileUploadButtonOnAction(ActionEvent actionEvent) {
+        System.out.println("Uploading Loss Report...");
     }
 
     @javafx.fxml.FXML
-    public void submitForVerificationButtonAction(ActionEvent actionEvent) {
+    public void submitForVerificationButtonOnAction(ActionEvent actionEvent) {
+        System.out.println("Submitting for Verification...");
     }
 
-    @Deprecated
-    public void handleLoginButtonAction(ActionEvent actionEvent) {
-    }
+
 }

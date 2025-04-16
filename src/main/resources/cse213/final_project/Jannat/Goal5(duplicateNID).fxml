@@ -8,9 +8,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="333.0" prefWidth="524.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.Goal5duplicateNidController">
+<AnchorPane prefHeight="333.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.Goal5duplicateNidController">
 
-    <!-- Event-3: Fill NID Details -->
+
     <Label layoutX="42.0" layoutY="45.0" text="Enter U-NID Number:" />
     <TextField fx:id="nidNumberTextField" layoutX="172.0" layoutY="45.0" />
 
@@ -30,10 +30,8 @@
         </items>
     </ComboBox>
 
-    <!-- Event-4: Submit Loss Report -->
     <Label layoutX="42.0" layoutY="205.0" text="Upload Loss Report:" />
-    <Button layoutX="172.0" layoutY="205.0" onAction="#handleFileUploadButtonAction" text="Upload Loss Report" />
+    <Button layoutX="172.0" layoutY="205.0" onAction="#handleFileUploadButtonOnAction" text="Upload Loss Report" />
 
-    <!-- Event-5: Initial Verification -->
-    <Button layoutX="172.0" layoutY="245.0" onAction="#submitForVerificationButtonAction" text="Submit for Verification" />
+    <Button layoutX="172.0" layoutY="245.0" onAction="#submitForVerificationButtonOnAction" text="Submit for Verification" />
 </AnchorPane>
