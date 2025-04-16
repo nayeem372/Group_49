@@ -5,7 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
-public class ApplyForNewNidController
+public class Goal2UpdateInformationController
 {
     @javafx.fxml.FXML
     private TextField phoneNumberTextField;
@@ -16,11 +16,11 @@ public class ApplyForNewNidController
     @javafx.fxml.FXML
     private TextField nameTextField;
     @javafx.fxml.FXML
+    private ComboBox<String> genderComboBox;
+    @javafx.fxml.FXML
     private DatePicker dateOfBirthDatePicker;
     @javafx.fxml.FXML
-    private TextField emailTextField1;
-    @javafx.fxml.FXML
-    private ComboBox<String>  genderComboBox;
+    private TextField birthCertificateTextField;
     @javafx.fxml.FXML
     private TextField nationalityTextField;
 
@@ -29,7 +29,6 @@ public class ApplyForNewNidController
     }
 
     @javafx.fxml.FXML
-    public void submitButtonOnAction(ActionEvent actionEvent) {
-
+    public void updateButtonOnAction(ActionEvent actionEvent) {
     }
 }
