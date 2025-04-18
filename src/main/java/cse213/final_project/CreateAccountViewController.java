@@ -30,7 +30,7 @@ public class CreateAccountViewController
 
     @javafx.fxml.FXML
     public void initialize() {
-        userTypeCB.getItems().addAll("General Citizen", "Data Entry Operator ", "Approval Officer","Verification Officer","Registration Officer","Help Desk Supporter") ;
+        userTypeCB.getItems().addAll("General Citizen", "DataEntry Operator ", "Approval Officer","Verification Officer","Registration Officer","Help Desk Supporter") ;
     }
 
     @javafx.fxml.FXML
@@ -40,7 +40,8 @@ public class CreateAccountViewController
     }
 
     @javafx.fxml.FXML
-    public void createAccountButtonOA(ActionEvent actionEvent) { String name, email, pN, address, password, userType ;
+    public void createAccountButtonOA(ActionEvent actionEvent) {
+        String name, email, pN, address, password, userType ;
         LocalDate dob ;
         int id = 0 ;
         Random random = new Random() ;
@@ -52,16 +53,16 @@ public class CreateAccountViewController
         password = passwordPF.getText() ;
         userType = userTypeCB.getValue() ;
         dob = dobDP.getValue() ;
-        if (userType == "Data Entry Operator") {
+        if (userType == "DataEntry Operator") {
             id = random.nextInt(10000, 99999) ;
-            DataEntryOperator dataEntry = new DataEntryOperator(address ,dob, email, id, name, password, pN,userType) ;
-            showTA.setText(dataEntry.toString());
-            this.writeDataEntryOperator(dataEntry);
-            this.writeUser(dataEntry);
+            DataEntryOperator DataEntry = new DataEntryOperator(address ,dob, email, id, name, password, pN,userType) ;
+            showTA.setText(DataEntry.toString());
+            this.writeDataEntryOperator(DataEntry);
+            this.writeUser(DataEntry);
         }
 //
 //
-        else if (userType == "Approval Officer") {
+        if (userType == "Approval Officer") {
             id = random.nextInt(1000000, 9999999) ;
             ApprovalOfficer AppOfficer = new ApprovalOfficer(address ,dob, email, id, name, password, pN,userType) ;
             showTA.setText(AppOfficer.toString());
@@ -81,11 +82,11 @@ public class CreateAccountViewController
         ObjectOutputStream oos = null;
 
         try {
-            f = new File("DataEntryOperatorData.bin");
+            f = new File("DataEntry.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
-//                oos = new AppendableObjectOutputStream(fos);
-                oos = new ObjectOutputStream(fos) ;
+                oos = new AppendableObjectOutputStream(fos);
+//                oos = new ObjectOutputStream(fos) ;
             }
             else{
                 fos = new FileOutputStream(f);

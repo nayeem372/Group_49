@@ -70,7 +70,7 @@ public class logInViewcontroller
         ObjectInputStream ois = null;
 
         try {
-            f = new File("DataEntryOperatorData.bin");
+            f = new File("DataEntry.bin");
             fis = new FileInputStream(f);
             ois = new ObjectInputStream(fis);
             DataEntryOperator DataEntry;
