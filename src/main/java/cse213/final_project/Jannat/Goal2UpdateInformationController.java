@@ -26,9 +26,43 @@ public class Goal2UpdateInformationController
 
     @javafx.fxml.FXML
     public void initialize() {
+        genderComboBox.getItems().addAll("Male", "Female", "Other");
     }
 
     @javafx.fxml.FXML
     public void updateButtonOnAction(ActionEvent actionEvent) {
+        if (nameTextField.getText().isEmpty() &&
+                citizenIdTextField.getText().isEmpty() &&
+                phoneNumberTextField.getText().isEmpty() &&
+                addressTextField.getText().isEmpty() &&
+                birthCertificateTextField.getText().isEmpty() &&
+                nationalityTextField.getText().isEmpty() &&
+                genderComboBox.getValue() != null &&
+                dateOfBirthDatePicker.getValue() != null) {
+
+
+            System.out.println("Application Submitted!");
+
+
+            boolean isDataValid = true;
+
+            if (isDataValid) {
+
+                System.out.println("Information successfully updated!");
+            } else {
+
+                System.out.println("Invalid data or not found in the database.");
+            }
+
+
+            nameTextField.clear();citizenIdTextField.clear();phoneNumberTextField.clear();
+            addressTextField.clear();birthCertificateTextField.clear();nationalityTextField.clear();
+            genderComboBox.setValue(null);dateOfBirthDatePicker.setValue(null);
+
+        } else {
+
+            System.out.println("Please complete all required fields.");
+        }
+
     }
 }

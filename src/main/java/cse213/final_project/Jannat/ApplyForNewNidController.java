@@ -26,10 +26,31 @@ public class ApplyForNewNidController
 
     @javafx.fxml.FXML
     public void initialize() {
+        genderComboBox.getItems().addAll("Male", "Female", "Other");
     }
 
     @javafx.fxml.FXML
     public void submitButtonOnAction(ActionEvent actionEvent) {
+        if (nameTextField.getText().isEmpty() &&
+                citizenIdTextField.getText().isEmpty() &&
+                phoneNumberTextField.getText().isEmpty() &&
+                addressTextField.getText().isEmpty() &&
+                emailTextField1.getText().isEmpty() &&
+                nationalityTextField.getText().isEmpty() &&
+                genderComboBox.getValue() != null &&
+                dateOfBirthDatePicker.getValue() != null) {
 
+            System.out.println("Application Submitted!");
+
+        } else {
+
+            System.out.println("Please complete all required fields.");
+        }
+
+        nameTextField.clear();citizenIdTextField.clear();phoneNumberTextField.clear();
+        addressTextField.clear();emailTextField1.clear();nationalityTextField.clear();
+        genderComboBox.setValue(null);dateOfBirthDatePicker.setValue(null);
     }
+
+
 }
