@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.collaborateWithHelpDeskController">
+    <Label layoutX="20" layoutY="20" text="Help Desk Collaboration" />
+    <TextArea fx:id="messageField" layoutX="20" layoutY="60" prefHeight="150" prefWidth="560" promptText="Type your message..." />
+    <Button layoutX="20" layoutY="230" onAction="#sendToHelpDeskOnAction" text="Send to Help Desk" />
+   <Button layoutX="515.0" layoutY="230.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+</AnchorPane>

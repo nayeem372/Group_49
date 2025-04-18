@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.reviewapplicationController">
+    <Label layoutX="20" layoutY="20" style="-fx-font-size:16px;" text="Pending NID Applications" />
+    <ComboBox fx:id="statusFilterComboBox" layoutX="20" layoutY="60" prefWidth="200" promptText="Filter by Status" />
+    <TableView fx:id="applicationTable" layoutX="20" layoutY="100" prefHeight="400" prefWidth="760" />
+    <Button layoutX="20" layoutY="520" onAction="#reviewButtonOnAction" text="Review Selected Application" />
+   <Button layoutX="711.0" layoutY="520.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+</AnchorPane>

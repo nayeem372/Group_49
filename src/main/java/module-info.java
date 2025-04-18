@@ -1,6 +1,7 @@
 module cse213.final_project {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens cse213.final_project to javafx.fxml;
