@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="609.0" prefWidth="592.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.VerificationProofController">
+    <!-- Title Section -->
+    <Label layoutX="112.0" layoutY="44.0" prefHeight="35.0" prefWidth="382.0" text="Validate Proof of Citizenship and Supporting Documents">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+
+    <!-- Document Upload Section -->
+    <Label layoutX="37.0" layoutY="118.0" prefHeight="18.0" prefWidth="138.0" text="National ID Card Copy:" />
+    <TextField fx:id="nationalIdTextField" layoutX="241.0" layoutY="118.0" prefWidth="200" />
+    <Button fx:id="browseNationalIdButton" layoutX="476.0" layoutY="118.0" onAction="#browseIdButtonOnAction" prefHeight="26.0" prefWidth="54.0" text="Browse" />
+
+    <Label layoutX="37.0" layoutY="158.0" text="Birth Certificate:" />
+    <TextField fx:id="birthCertificateTextField" layoutX="241.0" layoutY="158.0" prefWidth="200" />
+    <Button fx:id="browseBirthCertButton" layoutX="476.0" layoutY="158.0" onAction="#browseBirthButtonOnAction" text="Browse" />
+
+    <Label layoutX="37.0" layoutY="198.0" text="Passport (if provided):" />
+    <TextField fx:id="passportTextField" layoutX="241.0" layoutY="198.0" prefWidth="200" />
+    <Button fx:id="browsePassportButton" layoutX="476.0" layoutY="198.0" onAction="#browsePassButtonOnAction" text="Browse" />
+
+    <!-- Document Validation Section -->
+    <Label layoutX="37.0" layoutY="238.0" text="Document Validity Status:" />
+    <ComboBox fx:id="documentValidityComboBox" layoutX="241.0" layoutY="238.0" prefWidth="200">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Valid" />
+                <String fx:value="Invalid" />
+                <String fx:value="Pending" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <!-- Request Clarification Section -->
+    <Label layoutX="37.0" layoutY="278.0" text="Clarification Request (if needed):" />
+    <TextArea fx:id="clarificationTextArea" layoutX="241.0" layoutY="278.0" prefHeight="80" prefWidth="200" />
+
+    <!-- Document Review Status Section -->
+    <Label layoutX="37.0" layoutY="378.0" text="Status of Citizenship Validation:" />
+    <ComboBox fx:id="validationStatusComboBox" layoutX="241.0" layoutY="378.0" prefWidth="200">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Approved" />
+                <String fx:value="Flagged" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Label layoutX="37.0" layoutY="418.0" text="Remarks (if flagged):" />
+    <TextArea fx:id="remarksTextArea" layoutX="241.0" layoutY="418.0" prefHeight="80" prefWidth="200" />
+
+    <!-- Submit Button -->
+    <Button fx:id="submitButton" layoutX="248.0" layoutY="520.0" onAction="#submitButtonOnAction" text="Submit Validation" />
+
+</AnchorPane>

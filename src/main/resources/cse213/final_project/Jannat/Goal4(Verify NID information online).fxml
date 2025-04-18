@@ -22,7 +22,7 @@
     <Label layoutX="35.0" layoutY="220.0" text="Date of Birth:" />
     <DatePicker fx:id="dobDatePicker" layoutX="170.0" layoutY="215.0" prefWidth="300.0" />
 
-    <Button layoutX="170.0" layoutY="260.0" onAction="#verifyNIDInformation" text="Verify NID Information" />
+    <Button layoutX="170.0" layoutY="260.0" onAction="#verifyNIDInformationButtonOnAction" text="Verify NID Information" />
 
     <Label layoutX="35.0" layoutY="300.0" text="Verification Status:" />
     <Label fx:id="statusLabel" layoutX="170.0" layoutY="300.0" style="-fx-font-size: 14px;" text="Pending" />
@@ -39,8 +39,8 @@
     <Label layoutX="35.0" layoutY="460.0" text="Registration Status:" />
     <Label fx:id="verifiedStatus" layoutX="170.0" layoutY="460.0" style="-fx-font-size: 14px;" text="N/A" />
 
-    <Button layoutX="170.0" layoutY="500.0" onAction="#recheckInformation" prefHeight="26.0" prefWidth="136.0" text="Recheck Information" />
-    <Button layoutX="170.0" layoutY="540.0" onAction="#contactSupport" text="Contact Support" />
+    <Button layoutX="170.0" layoutY="500.0" onAction="#recheckInformationButtonOnAction" prefHeight="26.0" prefWidth="136.0" text="Recheck Information" />
+    <Button layoutX="170.0" layoutY="540.0" onAction="#contactSupportButtonOnAction" text="Contact Support" />
 
     <Label fx:id="errorMessageLabel" layoutX="170.0" layoutY="580.0" prefHeight="20.0" prefWidth="123.0" style="-fx-font-size: 14px; color: red;" text="Error: Invalid NID" />
 
