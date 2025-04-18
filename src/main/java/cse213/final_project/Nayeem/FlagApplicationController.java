@@ -1,8 +1,8 @@
 package cse213.final_project.Nayeem;
 
 import cse213.final_project.SceneSwitcher;
-import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
+import javafx.event.*;
+import javafx.scene.control.*;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
