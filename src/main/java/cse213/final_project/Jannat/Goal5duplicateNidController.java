@@ -28,7 +28,17 @@ public class Goal5duplicateNidController
 
     @javafx.fxml.FXML
     public void submitForVerificationButtonOnAction(ActionEvent actionEvent) {
-        System.out.println("Submitting for Verification...");
+        if (nidNumberTextField.getText().isEmpty() && fullNameTextField.getText().isEmpty() && addressTextField.getText().isEmpty() &&
+                nidStatusComboBox != null) {
+
+            System.out.println("Submitting for Verification...");
+
+            System.out.println("Application Submitted for Verification!");
+        } else {
+
+            System.out.println("Please make sure all fields are filled out correctly.");
+        }
+
     }
 
 
