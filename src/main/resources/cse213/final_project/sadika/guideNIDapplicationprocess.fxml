@@ -20,6 +20,6 @@
 
     <Label layoutX="300" layoutY="350" text="Uploaded Documents Verification:" />
     <Button layoutX="300" layoutY="380" onAction="#verifyDocumentsOnAction" prefWidth="220" text="Verify Uploaded Documents" />
-   <Button layoutX="558.0" layoutY="380.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+   <Button layoutX="574.0" layoutY="380.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
 
 </AnchorPane>
