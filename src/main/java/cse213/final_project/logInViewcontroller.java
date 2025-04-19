@@ -1,6 +1,7 @@
 package cse213.final_project;
 
 import cse213.final_project.Nayeem.ApprovalOfficer;
+import cse213.final_project.Nayeem.ApprovalOfficerDashboardController;
 import cse213.final_project.Nayeem.DataEntryDashboardController;
 import cse213.final_project.Nayeem.DataEntryOperator;
 import javafx.collections.FXCollections;
@@ -58,9 +59,9 @@ public class logInViewcontroller
             ObservableList<ApprovalOfficer> AppOfficerObservableList = this.readAppOfficer() ;
             for(ApprovalOfficer AppOfficer : AppOfficerObservableList) {
                 if (AppOfficer.getId() == id && Objects.equals(AppOfficer.getPassword(), password)) {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Nayeem/dataEntryDashboard.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Nayeem/ApprovalOfficerDashboard.fxml"));
                     Parent root = loader.load();
-                    DataEntryDashboardController controller = loader.getController();
+                    ApprovalOfficerDashboardController controller = loader.getController();
                     controller.setUser(AppOfficer);
                     Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root);
@@ -121,7 +122,7 @@ public class logInViewcontroller
         ObjectInputStream ois = null;
 
         try {
-            f = new File("DataEntry.bin");
+            f = new File("DataEntryOperator.bin");
             fis = new FileInputStream(f);
             ois = new ObjectInputStream(fis);
             DataEntryOperator DataEntry;
@@ -152,7 +153,7 @@ public class logInViewcontroller
         ObjectInputStream ois = null;
 
         try {
-            f = new File("ApprovalOfficer.bin");
+            f = new File("AppOfficer.bin");
             fis = new FileInputStream(f);
             ois = new ObjectInputStream(fis);
             ApprovalOfficer AppOfficer;

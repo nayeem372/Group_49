@@ -3,12 +3,12 @@ package cse213.final_project;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class User implements Serializable {
+public abstract class User implements Serializable {
     private int id ;
     private String name, email, pN, password, type, address ;
     private LocalDate dob ;
 
-    public  User(String address, LocalDate dob, String email, int id, String name, String password, String pN, String type) {
+    public User(String address, LocalDate dob, String email, int id, String name, String password, String pN, String type) {
         this.address = address;
         this.dob = dob;
         this.email = email;
