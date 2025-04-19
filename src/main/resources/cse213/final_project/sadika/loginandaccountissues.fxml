@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.sadika.loginAndAccountIssuesController">
+
+    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px;" text="Help Desk Support - Login Assistance" />
+
+    <Label layoutX="20" layoutY="70" text="Citizen ID:" />
+    <TextField fx:id="citizenIdTextField" layoutX="150" layoutY="65" prefWidth="300" />
+
+    <Button layoutX="470" layoutY="65" onAction="#verifyIdentityOnAction" text="Verify Identity" />
+
+    <Label layoutX="20" layoutY="120" style="-fx-font-weight: bold;" text="Password Reset / Unlock Options" />
+
+    <Button layoutX="20" layoutY="160" onAction="#resetPasswordOnAction" prefWidth="150" text="Reset Password" />
+    <Button layoutX="200" layoutY="160" onAction="#unlockAccountOnAction" prefWidth="150" text="Unlock Account" />
+
+    <Label layoutX="20" layoutY="220" style="-fx-font-weight: bold;" text="MFA Assistance" />
+    <Button layoutX="20" layoutY="260" onAction="#guideMFAOnAction" prefWidth="200" text="Guide for MFA Setup" />
+
+    <Label layoutX="20" layoutY="320" style="-fx-font-weight: bold;" text="Troubleshooting" />
+    <Button layoutX="20" layoutY="350" onAction="#troubleshootOnAction" prefWidth="250" text="Provide Troubleshooting Steps" />
+   <Button layoutX="489.0" layoutY="350.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+
+</AnchorPane>
