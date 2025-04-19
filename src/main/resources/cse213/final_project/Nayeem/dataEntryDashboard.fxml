@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="546.0" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.DataEntryDashboardController">
+<AnchorPane prefHeight="546.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.DataEntryDashboardController">
     <Label layoutX="200" layoutY="30" style="-fx-font-size: 18px;" text="Data Entry Dashboard" />
 
     <Button fx:id="newAppButton" layoutX="21.0" layoutY="81.0" onAction="#newAppButtonOnAction" prefWidth="200" text="New Application Entry" />
@@ -13,7 +13,15 @@
     <Button layoutX="21.0" layoutY="243.0" onAction="#validateFormButtonOnAction" prefWidth="200" text="Validate Forms" />
     <Button layoutX="21.0" layoutY="293.0" onAction="#assignTrackingButtonOnAction" prefWidth="200" text="Assign Tracking ID" />
     <Button layoutX="21.0" layoutY="342.0" onAction="#recordSearchButtonOnAction" prefWidth="200" text="Search and Update Records" />
-   <Button layoutX="465.0" layoutY="498.0" onAction="#logOutOnAction" prefHeight="25.0" prefWidth="111.0" text="Log out" />
+   <Button layoutX="504.0" layoutY="496.0" onAction="#logOutOnAction" prefHeight="25.0" prefWidth="111.0" text="Log out" />
    <Button layoutX="21.0" layoutY="399.0" onAction="#veriCButtonOnAction" prefWidth="200" text="Verification Coordination" />
    <Button layoutX="21.0" layoutY="446.0" onAction="#appSButtonOnAction" prefWidth="200" text="Application Summary" />
+   <Label layoutX="305.0" layoutY="85.0" prefHeight="18.0" prefWidth="43.0" text="Name:" />
+   <Label layoutX="305.0" layoutY="120.0" prefHeight="18.0" prefWidth="43.0" text="Id:" />
+   <Label layoutX="305.0" layoutY="164.0" prefHeight="18.0" prefWidth="43.0" text="Email:" />
+   <Label layoutX="305.0" layoutY="213.0" prefHeight="18.0" prefWidth="90.0" text="Phone Number:" />
+   <Label fx:id="nameLabel" layoutX="395.0" layoutY="86.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+   <Label fx:id="emailLabel" layoutX="395.0" layoutY="165.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+   <Label fx:id="idLabel" layoutX="395.0" layoutY="121.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+   <Label fx:id="pNLabel" layoutX="395.0" layoutY="214.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
 </AnchorPane>

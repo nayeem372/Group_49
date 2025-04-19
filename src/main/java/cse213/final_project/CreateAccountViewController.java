@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.Random;
 
 public class CreateAccountViewController
@@ -30,7 +31,7 @@ public class CreateAccountViewController
 
     @javafx.fxml.FXML
     public void initialize() {
-        userTypeCB.getItems().addAll("General Citizen", "DataEntry Operator ", "Approval Officer","Verification Officer","Registration Officer","Help Desk Supporter") ;
+        userTypeCB.getItems().addAll("General Citizen", "DataEntry Operator", "Approval Officer","Verification Officer","Registration Officer","Help Desk Supporter") ;
     }
 
     @javafx.fxml.FXML
@@ -53,20 +54,21 @@ public class CreateAccountViewController
         password = passwordPF.getText() ;
         userType = userTypeCB.getValue() ;
         dob = dobDP.getValue() ;
-        if (userType == "DataEntry Operator") {
-            id = random.nextInt(10000, 99999) ;
-            DataEntryOperator DataEntry = new DataEntryOperator(address ,dob, email, id, name, password, pN,userType) ;
+        if (userType.equals("DataEntry Operator")) {
+            id = random.nextInt(10000, 99999);
+            DataEntryOperator DataEntry = new DataEntryOperator(address, dob, email, id, name, password, pN, userType);
             showTA.setText(DataEntry.toString());
             this.writeDataEntryOperator(DataEntry);
             this.writeUser(DataEntry);
         }
+
 //
 //
-        if (userType == "Approval Officer") {
+        if (Objects.equals(userType, "Approval Officer")) {
             id = random.nextInt(1000000, 9999999) ;
             ApprovalOfficer AppOfficer = new ApprovalOfficer(address ,dob, email, id, name, password, pN,userType) ;
             showTA.setText(AppOfficer.toString());
-            this.writeMember(AppOfficer);
+            this.writeAppOfficer(AppOfficer);
             this.writeUser(AppOfficer);
         }
         nameTF.clear();
@@ -105,7 +107,7 @@ public class CreateAccountViewController
             }
         }
     }
-    public void writeMember(ApprovalOfficer AppOfficer) {
+    public void writeAppOfficer(ApprovalOfficer AppOfficer) {
         File f = null;
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;

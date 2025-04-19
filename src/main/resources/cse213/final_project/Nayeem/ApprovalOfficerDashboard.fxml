@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="449.0" prefWidth="469.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Nayeem.ApprovalOfficerDashboardController">
+<AnchorPane prefHeight="449.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.ApprovalOfficerDashboardController">
    <Label layoutX="170.0" layoutY="28.0" text="Approval Officer Dashboard">
       <font>
          <Font size="20.0" />
@@ -24,5 +24,5 @@
           <Button onAction="#followUpPendingApplicationsOnAction" prefHeight="16.0" prefWidth="250" text="Follow Up on Pending Applications" />
       </children>
    </VBox>
-   <Button layoutX="374.0" layoutY="393.0" mnemonicParsing="false" text="Log out" />
+   <Button layoutX="362.0" layoutY="393.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Log out" />
 </AnchorPane>

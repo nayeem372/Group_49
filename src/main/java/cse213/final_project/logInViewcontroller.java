@@ -1,15 +1,19 @@
 package cse213.final_project;
 
 import cse213.final_project.Nayeem.ApprovalOfficer;
+import cse213.final_project.Nayeem.DataEntryDashboardController;
 import cse213.final_project.Nayeem.DataEntryOperator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,6 +27,7 @@ public class logInViewcontroller
     private PasswordField passwordPasswordField;
     @javafx.fxml.FXML
     private TextField userIdTextField;
+    private FXMLLoader loader;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -37,7 +42,14 @@ public class logInViewcontroller
             ObservableList<DataEntryOperator> DataEntryObservableList = this.readDataEntry() ;
             for(DataEntryOperator DataEntry : DataEntryObservableList) {
                 if (DataEntry.getId() == id && Objects.equals(DataEntry.getPassword(), password)) {
-                    SceneSwitcher.switchTo("Nayeem/dataEntryDashboard.fxml", actionEvent);
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Nayeem/dataEntryDashboard.fxml"));
+                    Parent root = loader.load();
+                    DataEntryDashboardController controller = loader.getController();
+                    controller.setUser(DataEntry);
+                    Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+                    Scene scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
                     break;
                 }
             }

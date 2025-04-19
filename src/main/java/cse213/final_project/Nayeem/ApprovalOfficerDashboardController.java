@@ -7,39 +7,6 @@ public class ApprovalOfficerDashboardController
     @javafx.fxml.FXML
     public void initialize() {
     }
-
-    @Deprecated
-    public void handleMaintainApprovalLogs(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleFollowUpPendingApplications(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleApproveFinalNID(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleReviewFlaggedCases(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleCoordinateUnclearCases(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleHandleAppeals(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleEnsureApplicantInfoCorrect(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleProvidePrintingAuthorization(ActionEvent actionEvent) {
-    }
-
     @javafx.fxml.FXML
     public void coordinateUnclearCasesOnAction(ActionEvent actionEvent) {
     }
