@@ -8,14 +8,14 @@
     <Label layoutX="200" layoutY="30" style="-fx-font-size: 18px;" text="Data Entry Dashboard" />
 
     <Button fx:id="newAppButton" layoutX="21.0" layoutY="81.0" onAction="#newAppButtonOnAction" prefWidth="200" text="New Application Entry" />
-    <Button layoutX="21.0" layoutY="129.0" onAction="#uploadDocsButtonOnAction" prefWidth="200" text="Upload Documents" />
-    <Button layoutX="21.0" layoutY="188.0" onAction="#flagAppButtonOnAction" prefWidth="200" text="Flag Applications" />
-    <Button layoutX="21.0" layoutY="243.0" onAction="#validateFormButtonOnAction" prefWidth="200" text="Validate Forms" />
-    <Button layoutX="21.0" layoutY="293.0" onAction="#assignTrackingButtonOnAction" prefWidth="200" text="Assign Tracking ID" />
-    <Button layoutX="21.0" layoutY="342.0" onAction="#recordSearchButtonOnAction" prefWidth="200" text="Search and Update Records" />
+    <Button layoutX="21.0" layoutY="454.0" onAction="#sBinButtonOnAction" prefWidth="200" text="Save Data to Bin File " />
+    <Button layoutX="21.0" layoutY="126.0" onAction="#flagAppButtonOnAction" prefWidth="200" text="Flag Applications" />
+    <Button layoutX="21.0" layoutY="182.0" onAction="#validateFormButtonOnAction" prefWidth="200" text="Validate Forms" />
+    <Button layoutX="21.0" layoutY="231.0" onAction="#assignTrackingButtonOnAction" prefWidth="200" text="Assign Tracking ID" />
+    <Button layoutX="21.0" layoutY="290.0" onAction="#recordSearchButtonOnAction" prefWidth="200" text="Search and Update Records" />
    <Button layoutX="504.0" layoutY="496.0" onAction="#logOutOnAction" prefHeight="25.0" prefWidth="111.0" text="Log out" />
-   <Button layoutX="21.0" layoutY="399.0" onAction="#veriCButtonOnAction" prefWidth="200" text="Verification Coordination" />
-   <Button layoutX="21.0" layoutY="446.0" onAction="#appSButtonOnAction" prefWidth="200" text="Application Summary" />
+   <Button layoutX="21.0" layoutY="344.0" onAction="#veriCButtonOnAction" prefWidth="200" text="Verification Coordination" />
+   <Button layoutX="21.0" layoutY="393.0" onAction="#appSButtonOnAction" prefWidth="200" text="Application Summary" />
    <Label layoutX="305.0" layoutY="85.0" prefHeight="18.0" prefWidth="43.0" text="Name:" />
    <Label layoutX="305.0" layoutY="120.0" prefHeight="18.0" prefWidth="43.0" text="Id:" />
    <Label layoutX="305.0" layoutY="164.0" prefHeight="18.0" prefWidth="43.0" text="Email:" />
