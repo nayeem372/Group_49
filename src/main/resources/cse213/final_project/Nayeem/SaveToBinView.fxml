@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml" fx:controller="cse213.final_project.Nayeem.SaveToBinController" prefWidth="800" prefHeight="500">
+
+    <Label text="Applicant Summary and Save to Bin File" layoutX="240" layoutY="20" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <TableView fx:id="applicantTable" layoutX="50" layoutY="70" prefWidth="700" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="fullNameCol" text="Full Name" prefWidth="120" />
+            <TableColumn fx:id="fatherNameCol" text="Father's Name" prefWidth="120" />
+            <TableColumn fx:id="motherNameCol" text="Mother's Name" prefWidth="120" />
+            <TableColumn fx:id="genderCol" text="Gender" prefWidth="80" />
+            <TableColumn fx:id="dobCol" text="DOB" prefWidth="100" />
+            <TableColumn fx:id="phoneCol" text="Phone" prefWidth="80" />
+            <TableColumn fx:id="emailCol" text="Email" prefWidth="120" />
+        </columns>
+    </TableView>
+    <Button fx:id="saveButton" text="Save All to Bin File" layoutX="320" layoutY="390" prefWidth="160" onAction="#SaveToBinOnAction"/>
+    <Label fx:id="statusLabel" layoutX="280" layoutY="440" prefWidth="300" style="-fx-text-fill: green;" />
+
+</AnchorPane>
+

@@ -60,4 +60,8 @@ public class ApprovalOfficerDashboardController
     public User getUser() {
         return user;
     }
+
+    @javafx.fxml.FXML
+    public void logOutOnAction(ActionEvent actionEvent) {
+    }
 }

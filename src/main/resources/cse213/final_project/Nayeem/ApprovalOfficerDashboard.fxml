@@ -32,5 +32,5 @@
     <Label fx:id="emailLabel" layoutX="395.0" layoutY="165.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
     <Label fx:id="idLabel" layoutX="395.0" layoutY="121.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
     <Label fx:id="pNLabel" layoutX="395.0" layoutY="214.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
-   <Button layoutX="362.0" layoutY="393.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Log out" />
+   <Button layoutX="362.0" layoutY="393.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="25.0" prefWidth="69.0" text="Log out" />
 </AnchorPane>

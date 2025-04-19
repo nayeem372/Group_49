@@ -3,7 +3,7 @@ package cse213.final_project;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class User implements Serializable {
+public abstract class User implements Serializable {
     private int id ;
     private String name, email, pN, password, type, address ;
     private LocalDate dob ;

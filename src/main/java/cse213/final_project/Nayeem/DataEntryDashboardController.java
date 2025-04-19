@@ -51,7 +51,7 @@ public class DataEntryDashboardController
         }
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void uploadDocsButtonOnAction(ActionEvent actionEvent) {
     }
 
@@ -87,5 +87,9 @@ public class DataEntryDashboardController
     }
     public User getUser() {
         return user;
+    }
+
+    @javafx.fxml.FXML
+    public void sBinButtonOnAction(ActionEvent actionEvent) {
     }
 }
