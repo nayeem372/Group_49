@@ -4,10 +4,11 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="734.0" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.NewApplicationViewController">
+<AnchorPane prefHeight="884.0" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.NewApplicationViewController">
 
     <Label layoutX="200" layoutY="20" style="-fx-font-size: 18px;" text="New NID Application" />
 
@@ -26,25 +27,24 @@
     <Label layoutX="50" layoutY="230" text="Date of Birth:" />
     <DatePicker fx:id="dobPicker" layoutX="200" layoutY="225" prefWidth="150" />
 
-    <Button layoutX="184.0" layoutY="658.0" onAction="#submitButtonOnAction" prefWidth="200" text="Submit Application" />
+    <Button layoutX="200.0" layoutY="600.0" onAction="#submitButtonOnAction" prefWidth="200" text="Submit Application" />
    <Label layoutX="50.0" layoutY="269.0" text="Phone Number:" />
    <TextField fx:id="phoneNumberField" layoutX="200.0" layoutY="264.0" prefWidth="300" />
    <Label layoutX="50.0" layoutY="313.0" text="Email Address:" />
    <TextField fx:id="emailAddressField" layoutX="200.0" layoutY="308.0" prefWidth="300" />
-   <Label layoutX="50.0" layoutY="360.0" text="Aplicant Id:" />
-   <TextField fx:id="ApplicantIdfield" layoutX="200.0" layoutY="355.0" prefWidth="300" />
    <Label layoutX="50.0" layoutY="441.0" />
-   <TextField fx:id="districtField" layoutX="200.0" layoutY="437.0" prefWidth="300" />
-   <Label layoutX="50.0" layoutY="404.0" text="Division:" />
-   <TextField fx:id="divisionField" layoutX="200.0" layoutY="399.0" prefWidth="300" />
-   <Label layoutX="50.0" layoutY="441.0" prefHeight="17.0" prefWidth="57.0" text="District:" />
-   <TextField fx:id="villageField" layoutX="197.0" layoutY="515.0" prefWidth="300" />
-   <Label layoutX="53.0" layoutY="519.0" prefHeight="17.0" prefWidth="101.0" text="Village or ward:" />
-   <TextField fx:id="upozilaField" layoutX="197.0" layoutY="481.0" prefWidth="300" />
-   <Label layoutX="53.0" layoutY="485.0" prefHeight="17.0" prefWidth="57.0" text="Upozila:" />
-   <Label layoutX="53.0" layoutY="564.0" prefHeight="17.0" prefWidth="101.0" text="Union:" />
-   <TextField fx:id="unionField" layoutX="197.0" layoutY="560.0" prefWidth="300" />
-   <Label layoutX="53.0" layoutY="604.0" prefHeight="17.0" prefWidth="101.0" text="Postal Code:" />
-   <TextField fx:id="postalCodeField" layoutX="197.0" layoutY="600.0" prefWidth="300" />
-   <Button layoutX="34.0" layoutY="695.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="92.0" text="Back" />
+   <TextField fx:id="districtField" layoutX="200.0" layoutY="392.0" prefWidth="300" />
+   <Label layoutX="50.0" layoutY="359.0" text="Division:" />
+   <TextField fx:id="divisionField" layoutX="200.0" layoutY="354.0" prefWidth="300" />
+   <Label layoutX="50.0" layoutY="396.0" prefHeight="17.0" prefWidth="57.0" text="District:" />
+   <TextField fx:id="villageField" layoutX="197.0" layoutY="470.0" prefWidth="300" />
+   <Label layoutX="53.0" layoutY="474.0" prefHeight="17.0" prefWidth="101.0" text="Village or ward:" />
+   <TextField fx:id="upozilaField" layoutX="197.0" layoutY="436.0" prefWidth="300" />
+   <Label layoutX="53.0" layoutY="440.0" prefHeight="17.0" prefWidth="57.0" text="Upozila:" />
+   <Label layoutX="53.0" layoutY="519.0" prefHeight="17.0" prefWidth="101.0" text="Union:" />
+   <TextField fx:id="unionField" layoutX="197.0" layoutY="515.0" prefWidth="300" />
+   <Label layoutX="53.0" layoutY="559.0" prefHeight="17.0" prefWidth="101.0" text="Postal Code:" />
+   <TextField fx:id="postalCodeField" layoutX="197.0" layoutY="555.0" prefWidth="300" />
+   <Button layoutX="25.0" layoutY="831.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="92.0" text="Back" />
+   <TextArea fx:id="showTA" layoutX="4.0" layoutY="631.0" prefHeight="198.0" prefWidth="593.0" />
 </AnchorPane>

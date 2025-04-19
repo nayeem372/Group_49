@@ -10,7 +10,7 @@ public class Applicant {
     private LocalDate dateOfBirth;
     private String phoneNumber;
     private String emailAddress;
-    private String ApplicantId;
+    private Long ApplicantId;
     private String division;
     private String district;
     private String upozila;
@@ -18,7 +18,7 @@ public class Applicant {
     private String villageOrWard;
     private Integer postalCode;
 
-    public Applicant(String applicantId, LocalDate dateOfBirth, String district, String division, String emailAddress, String fatherName, String fullName, String gender, String motherName, String phoneNumber, Integer postalCode, String union, String upozila, String villageOrWard) {
+    public Applicant(Long applicantId, LocalDate dateOfBirth, String district, String division, String emailAddress, String fatherName, String fullName, String gender, String motherName, String phoneNumber, Integer postalCode, String union, String upozila, String villageOrWard) {
         ApplicantId = applicantId;
         this.dateOfBirth = dateOfBirth;
         this.district = district;
@@ -35,11 +35,11 @@ public class Applicant {
         this.villageOrWard = villageOrWard;
     }
 
-    public String getApplicantId() {
+    public Long getApplicantId() {
         return ApplicantId;
     }
 
-    public void setApplicantId(String applicantId) {
+    public void setApplicantId(Long applicantId) {
         ApplicantId = applicantId;
     }
 
