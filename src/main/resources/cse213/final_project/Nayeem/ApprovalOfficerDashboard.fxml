@@ -12,7 +12,7 @@
          <Font size="20.0" />
       </font>
    </Label>
-   <VBox layoutY="135.0" prefHeight="200.0" prefWidth="246.0">
+   <VBox layoutY="78.0" prefHeight="208.0" prefWidth="246.0">
       <children>
           <Button onAction="#approveFinalNIDOnAction" prefHeight="26.0" prefWidth="267.0" text="Approve Final NID Issuance" />
           <Button onAction="#reviewFlaggedCasesOnAction" prefHeight="26.0" prefWidth="257.0" text="Review Flagged/Disputed Cases" />
@@ -24,5 +24,13 @@
           <Button onAction="#followUpPendingApplicationsOnAction" prefHeight="16.0" prefWidth="250" text="Follow Up on Pending Applications" />
       </children>
    </VBox>
+    <Label layoutX="305.0" layoutY="85.0" prefHeight="18.0" prefWidth="43.0" text="Name:" />
+    <Label layoutX="305.0" layoutY="120.0" prefHeight="18.0" prefWidth="43.0" text="Id:" />
+    <Label layoutX="305.0" layoutY="164.0" prefHeight="18.0" prefWidth="43.0" text="Email:" />
+    <Label layoutX="305.0" layoutY="213.0" prefHeight="18.0" prefWidth="90.0" text="Phone Number:" />
+    <Label fx:id="nameLabel" layoutX="395.0" layoutY="86.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="emailLabel" layoutX="395.0" layoutY="165.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="idLabel" layoutX="395.0" layoutY="121.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="pNLabel" layoutX="395.0" layoutY="214.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
    <Button layoutX="362.0" layoutY="393.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Log out" />
 </AnchorPane>

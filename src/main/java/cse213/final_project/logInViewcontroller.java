@@ -58,7 +58,14 @@ public class logInViewcontroller
             ObservableList<ApprovalOfficer> AppOfficerObservableList = this.readAppOfficer() ;
             for(ApprovalOfficer AppOfficer : AppOfficerObservableList) {
                 if (AppOfficer.getId() == id && Objects.equals(AppOfficer.getPassword(), password)) {
-                    SceneSwitcher.switchTo("Nayeem/ApprovalOfficerDashboard.fxml", actionEvent);
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Nayeem/dataEntryDashboard.fxml"));
+                    Parent root = loader.load();
+                    DataEntryDashboardController controller = loader.getController();
+                    controller.setUser(AppOfficer);
+                    Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+                    Scene scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
                     break;
                 }
             }
