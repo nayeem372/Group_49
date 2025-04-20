@@ -14,6 +14,20 @@ public class FlagApplicationController
     private TextField appIdField;
     @javafx.fxml.FXML
     private TextArea issueDescriptionArea;
+    @javafx.fxml.FXML
+    private TableColumn emailIdTCol;
+    @javafx.fxml.FXML
+    private TableView tableView;
+    @javafx.fxml.FXML
+    private TableColumn applicantIdTCol;
+    @javafx.fxml.FXML
+    private TableColumn pNTCol;
+    @javafx.fxml.FXML
+    private TableColumn DOBTCol;
+    @javafx.fxml.FXML
+    private TableColumn nameIdTcol;
+    @javafx.fxml.FXML
+    private TableColumn genderTCol;
 
     @javafx.fxml.FXML
     public void initialize() {
