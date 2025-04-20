@@ -44,7 +44,7 @@ public class CreateAccountViewController
     public void createAccountButtonOA(ActionEvent actionEvent) {
         String name, email, pN, address, password, userType ;
         LocalDate dob ;
-        int id = 0 ;
+        Long id = 0L ;
         Random random = new Random() ;
 
         name = nameTF.getText() ;
@@ -55,7 +55,7 @@ public class CreateAccountViewController
         userType = userTypeCB.getValue() ;
         dob = dobDP.getValue() ;
         if (userType.equals("DataEntry Operator")) {
-            id = random.nextInt(10000, 99999);
+            id = random.nextLong(10000L, 99999L);
             DataEntryOperator DataEntry = new DataEntryOperator(address, dob, email, id, name, password, pN, userType);
             showTA.setText(DataEntry.toString());
             this.writeDataEntryOperator(DataEntry);
@@ -65,7 +65,7 @@ public class CreateAccountViewController
 //
 //
         if (Objects.equals(userType, "Approval Officer")) {
-            id = random.nextInt(1000000, 9999999) ;
+            id = random.nextLong(1000000L, 9999999L) ;
             ApprovalOfficer AppOfficer = new ApprovalOfficer(address ,dob, email, id, name, password, pN,userType) ;
             showTA.setText(AppOfficer.toString());
             this.writeAppOfficer(AppOfficer);

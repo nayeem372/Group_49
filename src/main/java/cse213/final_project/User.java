@@ -4,11 +4,11 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public abstract class User implements Serializable {
-    private int id ;
+    private Long id ;
     private String name, email, pN, password, type, address ;
     private LocalDate dob ;
 
-    public User(String address, LocalDate dob, String email, int id, String name, String password, String pN, String type) {
+    public User(String address, LocalDate dob, String email, Long id, String name, String password, String pN, String type) {
         this.address = address;
         this.dob = dob;
         this.email = email;
@@ -43,11 +43,11 @@ public abstract class User implements Serializable {
         this.email = email;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
