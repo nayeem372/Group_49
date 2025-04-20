@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="403.0" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Nayeem.ApprovalFinalCheckController">
+    <Label layoutX="200" layoutY="20" style="-fx-font-size: 18px;" text="Final Application Review" />
+
+    <Label layoutX="50" layoutY="80" text="Application ID:" />
+    <TextField fx:id="applicationIdField" layoutX="180" layoutY="75" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="120" text="Applicant Name:" />
+    <TextField fx:id="applicantNameField" layoutX="180" layoutY="115" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="160" text="Verification Status:" />
+    <TextField fx:id="verificationStatusField" layoutX="180" layoutY="155" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="200" text="Flagged Issues:" />
+    <CheckBox fx:id="flaggedIssuesCheckBox" layoutX="180" layoutY="195" />
+
+    <Button layoutX="50" layoutY="250" onAction="#approveActionOnAction" prefWidth="160" text="Approve Application" />
+    <Button layoutX="230" layoutY="250" onAction="#generateSummaryOnAction" prefWidth="200" text="Generate Approval Summary" />
+
+    <Label fx:id="statusLabel" layoutX="50" layoutY="300" style="-fx-text-fill: green;" />
+   <Button layoutX="28.0" layoutY="352.0" onAction="#approveActionOnAction" prefHeight="25.0" prefWidth="99.0" text="Back" />
+</AnchorPane>

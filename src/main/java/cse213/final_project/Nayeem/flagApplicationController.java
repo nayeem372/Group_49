@@ -1,31 +1,23 @@
 package cse213.final_project.Nayeem;
 
-import javafx.event.ActionEvent;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-
 public class flagApplicationController
 {
     @javafx.fxml.FXML
     private TextField appIdField;
     @javafx.fxml.FXML
-    private TableColumn<ManualApplicant,String> emailIdTCol;
+    private TableColumn emailIdTCol;
     @javafx.fxml.FXML
-    private TableColumn<ManualApplicant,String> applicantTypeCol;
+    private TableView tableView;
     @javafx.fxml.FXML
-    private TableView<ManualApplicant> tableView;
+    private TableColumn applicantIdTCol;
     @javafx.fxml.FXML
-    private TableColumn<ManualApplicant,String> applicantIdTCol;
+    private TableColumn pNTCol;
     @javafx.fxml.FXML
-    private TableColumn<ManualApplicant,String> pNTCol;
+    private TableColumn DOBTCol;
     @javafx.fxml.FXML
-    private TableColumn<ManualApplicant,String> DOBTCol;
+    private TableColumn nameIdTcol;
     @javafx.fxml.FXML
-    private TableColumn<ManualApplicant,String> nameIdTcol;
-    @javafx.fxml.FXML
-    private TableColumn<ManualApplicant,String> genderTCol;
+    private TableColumn genderTCol;
     @javafx.fxml.FXML
     private TextArea issueDescriptionArea;
 

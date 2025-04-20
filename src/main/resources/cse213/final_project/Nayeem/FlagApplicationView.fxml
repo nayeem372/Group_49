@@ -27,7 +27,6 @@
          <TableColumn fx:id="pNTCol" prefWidth="101.0" text="Phone Number" />
          <TableColumn fx:id="genderTCol" prefWidth="109.0" text="Gender" />
          <TableColumn fx:id="DOBTCol" minWidth="0.0" prefWidth="107.0" text="Date Of Birth" />
-         <TableColumn fx:id="applicantTypeCol" prefWidth="157.0" text="Applicant Type" />
      </columns>
    </TableView>
 </AnchorPane>

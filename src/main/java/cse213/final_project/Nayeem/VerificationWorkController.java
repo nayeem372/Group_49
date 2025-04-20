@@ -1,0 +1,34 @@
+package cse213.final_project.Nayeem;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
+public class VerificationWorkController
+{
+    @javafx.fxml.FXML
+    private TextField verificationOfficerField;
+    @javafx.fxml.FXML
+    private TextArea verifiedTextArea;
+    @javafx.fxml.FXML
+    private TextField applicationIdField;
+    @javafx.fxml.FXML
+    private Label statusLabel;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
+    @javafx.fxml.FXML
+    public void markVerifiedOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void backOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void sendVerificationOnAction(ActionEvent actionEvent) {
+    }
+}

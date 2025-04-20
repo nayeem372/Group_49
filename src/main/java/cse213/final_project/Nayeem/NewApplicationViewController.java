@@ -124,7 +124,7 @@ public class NewApplicationViewController
         ObjectOutputStream oos = null;
 
         try {
-            f = new File("ManualApplicant.bin");
+            f = new File("ManualApp.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);
