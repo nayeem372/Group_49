@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class DashboardController
+public class CitizenDashboardController
 {
     @javafx.fxml.FXML
     private Button requestCorrectionNIDButton;

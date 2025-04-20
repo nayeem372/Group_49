@@ -9,12 +9,6 @@ import javafx.scene.control.TextField;
 public class VerificationProofController
 {
     @javafx.fxml.FXML
-    private Button browsePassportButton;
-    @javafx.fxml.FXML
-    private Button submitButton;
-    @javafx.fxml.FXML
-    private Button browseBirthCertButton;
-    @javafx.fxml.FXML
     private ComboBox<String> validationStatusComboBox;
     @javafx.fxml.FXML
     private TextArea remarksTextArea;
@@ -24,8 +18,6 @@ public class VerificationProofController
     private TextField birthCertificateTextField;
     @javafx.fxml.FXML
     private TextArea clarificationTextArea;
-    @javafx.fxml.FXML
-    private Button browseNationalIdButton;
     @javafx.fxml.FXML
     private TextField passportTextField;
     @javafx.fxml.FXML

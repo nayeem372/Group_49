@@ -75,7 +75,7 @@ public class logInViewcontroller
             ObservableList<ApprovalOfficer> AppOfficerObservableList = this.readAppOfficer() ;
             for(ApprovalOfficer AppOfficer : AppOfficerObservableList) {
                 if (AppOfficer.getId() == id && Objects.equals(AppOfficer.getPassword(), password)) {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/DashboardController.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/CitizenDashboardController.fxml"));
                     Parent root = loader.load();
                     DataEntryDashboardController controller = loader.getController();
                     controller.setUser(AppOfficer);

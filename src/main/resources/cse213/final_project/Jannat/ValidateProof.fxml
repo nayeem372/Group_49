@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="609.0" prefWidth="592.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.VerificationProofController">
+<AnchorPane prefHeight="609.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.VerificationProofController">
     <!-- Title Section -->
     <Label layoutX="112.0" layoutY="44.0" prefHeight="35.0" prefWidth="382.0" text="Validate Proof of Citizenship and Supporting Documents">
       <font>
@@ -20,15 +20,15 @@
     <!-- Document Upload Section -->
     <Label layoutX="37.0" layoutY="118.0" prefHeight="18.0" prefWidth="138.0" text="National ID Card Copy:" />
     <TextField fx:id="nationalIdTextField" layoutX="241.0" layoutY="118.0" prefWidth="200" />
-    <Button fx:id="browseNationalIdButton" layoutX="476.0" layoutY="118.0" onAction="#browseIdButtonOnAction" prefHeight="26.0" prefWidth="54.0" text="Browse" />
+    <Button layoutX="476.0" layoutY="118.0" onAction="#browseIdButtonOnAction" prefHeight="26.0" prefWidth="54.0" text="Browse" />
 
     <Label layoutX="37.0" layoutY="158.0" text="Birth Certificate:" />
     <TextField fx:id="birthCertificateTextField" layoutX="241.0" layoutY="158.0" prefWidth="200" />
-    <Button fx:id="browseBirthCertButton" layoutX="476.0" layoutY="158.0" onAction="#browseBirthButtonOnAction" text="Browse" />
+    <Button layoutX="476.0" layoutY="158.0" onAction="#browseBirthButtonOnAction" text="Browse" />
 
     <Label layoutX="37.0" layoutY="198.0" text="Passport (if provided):" />
     <TextField fx:id="passportTextField" layoutX="241.0" layoutY="198.0" prefWidth="200" />
-    <Button fx:id="browsePassportButton" layoutX="476.0" layoutY="198.0" onAction="#browsePassButtonOnAction" text="Browse" />
+    <Button layoutX="476.0" layoutY="198.0" onAction="#browsePassButtonOnAction" text="Browse" />
 
     <!-- Document Validation Section -->
     <Label layoutX="37.0" layoutY="238.0" text="Document Validity Status:" />
@@ -61,6 +61,6 @@
     <TextArea fx:id="remarksTextArea" layoutX="241.0" layoutY="418.0" prefHeight="80" prefWidth="200" />
 
     <!-- Submit Button -->
-    <Button fx:id="submitButton" layoutX="248.0" layoutY="520.0" onAction="#submitButtonOnAction" text="Submit Validation" />
+    <Button layoutX="248.0" layoutY="520.0" onAction="#submitButtonOnAction" text="Submit Validation" />
 
 </AnchorPane>

@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="548.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.DashboardController">
+<AnchorPane prefHeight="548.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.CitizenDashboardController">
     <Label layoutX="150.0" layoutY="40.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="General Citizen Dashboard" />
 
     <Button layoutX="43.0" layoutY="96.0" onAction="#applyForNewNIDButtonOnAction" prefHeight="26.0" prefWidth="278.0" text="Apply for a new NID registration" />
