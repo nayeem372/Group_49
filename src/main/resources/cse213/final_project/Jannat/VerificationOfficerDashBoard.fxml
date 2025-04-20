@@ -9,10 +9,10 @@
 
     <Button layoutX="41.0" layoutY="116.0" onAction="#crossCheckDataButtonOnAction" prefWidth="350.0" text="Cross-check applicant data against official records" />
 
-    <Button layoutX="41.0" layoutY="166.0" onAction="#biometricVerificationButtonOnAction" prefWidth="350.0" text=" Verify Application Completeness" />
+    <Button layoutX="41.0" layoutY="166.0" onAction="#VerificationApplicationButtonOnAction" prefWidth="350.0" text=" Verify Application Completeness" />
     <Button layoutX="41.0" layoutY="216.0" onAction="#validateCitizenshipButtonOnAction" prefWidth="350" text="Validate proof of citizenship and supporting documents" />
     <Button layoutX="41.0" layoutY="266.0" onAction="#reviewFlaggedApplicationsButtonOnAction" prefWidth="350" text="Review flagged applications for inconsistencies" />
-    <Button layoutX="41.0" layoutY="316.0" onAction="#approveRejectVerificationButtonOnAction" prefWidth="350" text="Approve or reject verification requests" />
+    <Button layoutX="41.0" layoutY="323.0" onAction="#approveRejectVerificationButtonOnAction" prefWidth="350" text="Approve or reject verification requests" />
     <Button layoutX="41.0" layoutY="366.0" onAction="#recordVerificationResultsButtonOnAction" prefWidth="350" text="Record verification results in the system" />
     <Button layoutX="41.0" layoutY="416.0" onAction="#requestAdditionalDocumentationButtonOnAction" prefWidth="350.0" text="Request additional documentation from applicants if needed" />
     <Button layoutX="41.0" layoutY="466.0" onAction="#collaborateWithLawEnforcementButtonOnAction" prefWidth="350.0" text="Collaborate with law enforcement for identity fraud cases" />
