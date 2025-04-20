@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="617.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.FlagApplicationController">
+<AnchorPane prefHeight="617.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Nayeem.flagApplicationController">
     <Label layoutX="180" layoutY="20" style="-fx-font-size: 18px;" text="Flag Application for Issues" />
 
     <Label layoutX="50" layoutY="80" text="Application ID:" />
@@ -17,16 +17,17 @@
     <Label layoutX="50" layoutY="120" text="Issue Description:" />
     <TextArea fx:id="issueDescriptionArea" layoutX="200" layoutY="115" prefHeight="100" prefWidth="300" />
 
-    <Button layoutX="200" layoutY="240" onAction="#flagButtonOnAction" text="Flag Application" />
-   <Button layoutX="14.0" layoutY="578.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="53.0" text="Back" />
-   <TableView fx:id="tableView" layoutX="1.0" layoutY="295.0" prefHeight="277.0" prefWidth="640.0">
+    <Button layoutX="200" layoutY="240" onAction="#FlagButtonOnAction" text="Flag Application" />
+   <Button layoutX="14.0" layoutY="578.0" onAction="#BackOnAction" prefHeight="25.0" prefWidth="53.0" text="Back" />
+   <TableView fx:id="tableView" layoutX="1.0" layoutY="295.0" prefHeight="277.0" prefWidth="769.0">
      <columns>
        <TableColumn fx:id="applicantIdTCol" prefWidth="84.0" text="Applicant ID" />
        <TableColumn fx:id="nameIdTcol" prefWidth="116.0" text="Name" />
          <TableColumn fx:id="emailIdTCol" prefWidth="97.0" text="Email" />
          <TableColumn fx:id="pNTCol" prefWidth="101.0" text="Phone Number" />
          <TableColumn fx:id="genderTCol" prefWidth="109.0" text="Gender" />
-         <TableColumn fx:id="DOBTCol" prefWidth="132.0" text="Date Of Birth" />
+         <TableColumn fx:id="DOBTCol" minWidth="0.0" prefWidth="107.0" text="Date Of Birth" />
+         <TableColumn fx:id="applicantTypeCol" prefWidth="157.0" text="Applicant Type" />
      </columns>
    </TableView>
 </AnchorPane>

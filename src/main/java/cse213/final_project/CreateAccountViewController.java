@@ -84,7 +84,7 @@ public class CreateAccountViewController
         ObjectOutputStream oos = null;
 
         try {
-            f = new File("DataEntryOperator.bin");
+            f = new File("DataEntryOp.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);
@@ -113,7 +113,7 @@ public class CreateAccountViewController
         ObjectOutputStream oos = null;
 
         try {
-            f = new File("AppOfficer.bin");
+            f = new File("ApOfficer.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);
@@ -141,7 +141,7 @@ public class CreateAccountViewController
         FileWriter fw = null ;
 
         try {
-            f = new File("UseData.txt") ;
+            f = new File("userData.txt") ;
             if (f.exists()) {
                 fw = new FileWriter(f, true) ;
             }

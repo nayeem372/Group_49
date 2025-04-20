@@ -55,7 +55,7 @@ public class NewApplicationViewController
             return;
         }
         ApplicantId =random.nextLong(1000000000L, 9999999999L);
-        Applicant applicant = new Applicant(
+        ManualApplicant applicant = new ManualApplicant(
                 ApplicantId,
                 dobPicker.getValue(),
                 districtField.getText().trim(),
@@ -118,7 +118,7 @@ public class NewApplicationViewController
         unionField.clear();
         postalCodeField.clear();
     }
-    public void writeManualApplicant(Applicant ManualApplicant) {
+    public void writeManualApplicant(ManualApplicant ManApplicant) {
         File f = null;
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -135,7 +135,7 @@ public class NewApplicationViewController
                 oos = new ObjectOutputStream(fos);
             }
 
-            oos.writeObject(ManualApplicant);
+            oos.writeObject(ManApplicant);
 
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

@@ -122,7 +122,7 @@ public class logInViewcontroller
         ObjectInputStream ois = null;
 
         try {
-            f = new File("DataEntryOperator.bin");
+            f = new File("DataEntryOp.bin");
             fis = new FileInputStream(f);
             ois = new ObjectInputStream(fis);
             DataEntryOperator DataEntry;
@@ -153,7 +153,7 @@ public class logInViewcontroller
         ObjectInputStream ois = null;
 
         try {
-            f = new File("AppOfficer.bin");
+            f = new File("ApOfficer.bin");
             fis = new FileInputStream(f);
             ois = new ObjectInputStream(fis);
             ApprovalOfficer AppOfficer;
