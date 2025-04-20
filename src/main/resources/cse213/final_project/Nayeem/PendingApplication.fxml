@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="380.0" prefWidth="666.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Nayeem.PendingApplicationFollowUpController">
+<AnchorPane prefHeight="380.0" prefWidth="666.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Nayeem.PendingApplicationController">
     <Label layoutX="180" layoutY="20" style="-fx-font-size: 18px;" text="Pending Applications Follow-Up" />
 
     <Label layoutX="40" layoutY="80" text="Application ID:" />

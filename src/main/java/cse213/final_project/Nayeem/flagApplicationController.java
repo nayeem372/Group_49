@@ -1,10 +1,13 @@
 package cse213.final_project.Nayeem;
 
+import cse213.final_project.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class flagApplicationController
 {
@@ -32,7 +35,9 @@ public class flagApplicationController
     }
 
     @javafx.fxml.FXML
-    public void BackOnAction(ActionEvent actionEvent) {
+    public void BackOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/dataEntryDashboard.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
