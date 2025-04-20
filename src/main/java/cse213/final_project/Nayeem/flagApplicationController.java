@@ -1,5 +1,11 @@
 package cse213.final_project.Nayeem;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
 public class flagApplicationController
 {
     @javafx.fxml.FXML
