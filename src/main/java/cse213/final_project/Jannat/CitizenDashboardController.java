@@ -1,12 +1,14 @@
 package cse213.final_project.Jannat;
 
 import cse213.final_project.Nayeem.DataEntryDashboardController;
+import cse213.final_project.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +17,15 @@ public class CitizenDashboardController
 {
     @javafx.fxml.FXML
     private Button requestCorrectionNIDButton;
+    @javafx.fxml.FXML
+    private Label idLabel;
+    @javafx.fxml.FXML
+    private Label pNLabel;
+    @javafx.fxml.FXML
+    private Label emailLabel;
+    @javafx.fxml.FXML
+    private Label nameLabel;
+    private User user;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -106,5 +117,12 @@ public class CitizenDashboardController
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+    public void setUser(User user) {
+        this.user = user;
+        idLabel.setText(String.valueOf(user.getId()));
+        pNLabel.setText(user.getpN());
+        emailLabel.setText(user.getEmail());
+        nameLabel.setText(user.getName());
     }
 }

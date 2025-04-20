@@ -75,15 +75,15 @@ public class CreateAccountViewController
         }
 
         if (userType.equals("General Citizen")) {
-            id = random.nextInt(10000, 99999);
-            GeneralCitizen generalCitizen = new GeneralCitizen(address, dob, email, id, name, password, pN, userType);
+            id = random.nextLong(10000L, 99999L);
+            GeneralCitizen generalCitizen = new GeneralCitizen(address, dob, email,id, name, password, pN, userType);
             showTA.setText(generalCitizen.toString());
             this.writeGeneralCitizen(generalCitizen);  // Save the General Citizen data
             this.writeUser(generalCitizen);  // Save the User data
         }
 
         else if (userType.equals("Verification Officer")) {
-            id = random.nextInt(1000, 9999);
+            id = random.nextLong(1000L, 9999L);
             VerificationOfficer verificationOfficer = new VerificationOfficer(address, dob, email, id, name, password, pN, userType);
             showTA.setText(verificationOfficer.toString());
             this.writeVerificationOfficer(verificationOfficer);  // Save the Verification Officer data

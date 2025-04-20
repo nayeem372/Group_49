@@ -16,4 +16,12 @@
     <Button layoutX="41.0" layoutY="366.0" onAction="#recordVerificationResultsButtonOnAction" prefWidth="350" text="Record verification results in the system" />
     <Button layoutX="41.0" layoutY="416.0" onAction="#requestAdditionalDocumentationButtonOnAction" prefWidth="350.0" text="Request additional documentation from applicants if needed" />
     <Button layoutX="41.0" layoutY="466.0" onAction="#collaborateWithLawEnforcementButtonOnAction" prefWidth="350.0" text="Collaborate with law enforcement for identity fraud cases" />
+    <Label layoutX="305.0" layoutY="85.0" prefHeight="18.0" prefWidth="43.0" text="Name:" />
+    <Label layoutX="305.0" layoutY="120.0" prefHeight="18.0" prefWidth="43.0" text="Id:" />
+    <Label layoutX="305.0" layoutY="164.0" prefHeight="18.0" prefWidth="43.0" text="Email:" />
+    <Label layoutX="305.0" layoutY="213.0" prefHeight="18.0" prefWidth="90.0" text="Phone Number:" />
+    <Label fx:id="nameLabel" layoutX="395.0" layoutY="86.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="emailLabel" layoutX="395.0" layoutY="165.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="idLabel" layoutX="395.0" layoutY="121.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="pNLabel" layoutX="395.0" layoutY="214.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
 </AnchorPane>
