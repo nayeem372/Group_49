@@ -1,5 +1,7 @@
 package cse213.final_project;
 
+import cse213.final_project.Jannat.GeneralCitizen;
+import cse213.final_project.Jannat.VerificationOfficer;
 import cse213.final_project.Nayeem.ApprovalOfficer;
 import cse213.final_project.Nayeem.DataEntryOperator;
 import javafx.event.ActionEvent;
@@ -71,6 +73,24 @@ public class CreateAccountViewController
             this.writeAppOfficer(AppOfficer);
             this.writeUser(AppOfficer);
         }
+
+        if (userType.equals("General Citizen")) {
+            id = random.nextInt(10000, 99999);
+            GeneralCitizen generalCitizen = new GeneralCitizen(address, dob, email, id, name, password, pN, userType);
+            showTA.setText(generalCitizen.toString());
+            this.writeGeneralCitizen(generalCitizen);  // Save the General Citizen data
+            this.writeUser(generalCitizen);  // Save the User data
+        }
+
+        else if (userType.equals("Verification Officer")) {
+            id = random.nextInt(1000, 9999);
+            VerificationOfficer verificationOfficer = new VerificationOfficer(address, dob, email, id, name, password, pN, userType);
+            showTA.setText(verificationOfficer.toString());
+            this.writeVerificationOfficer(verificationOfficer);  // Save the Verification Officer data
+            this.writeUser(verificationOfficer);  // Save the User data
+        }
+
+
         nameTF.clear();
         emailTF.clear();
         pNTF.clear();
@@ -155,4 +175,74 @@ public class CreateAccountViewController
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+    public void writeGeneralCitizen(GeneralCitizen generalCitizen) {
+        File f = null;
+        FileOutputStream fos = null;
+        ObjectOutputStream oos = null;
+
+        try {
+            f = new File("GeneralCitizenData.bin");
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true); // true for append mode
+                oos = new ObjectOutputStream(fos) {
+                    // This overrides the default constructor to allow appending
+                    protected void writeStreamHeader() throws IOException {
+                        // Do not write a header for append mode
+                    }
+                };
+            } else {
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);
+            }
+
+            oos.writeObject(generalCitizen);  // Write the GeneralCitizen object
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            try {
+                if (oos != null) {
+                    oos.close();  // Close the ObjectOutputStream
+                }
+            } catch (IOException ex) {
+                System.out.println("Error closing the stream: " + ex.getMessage());
+            }
+        }
+    }
+
+    public void writeVerificationOfficer(VerificationOfficer verificationOfficer) {
+        File f = null;
+        FileOutputStream fos = null;
+        ObjectOutputStream oos = null;
+
+        try {
+            f = new File("VerificationOfficerData.bin");
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true); // true for append mode
+                oos = new ObjectOutputStream(fos) {
+                    // Override the default constructor to allow appending
+                    protected void writeStreamHeader() throws IOException {
+                        // Do not write a header for append mode
+                    }
+                };
+            } else {
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);
+            }
+
+            oos.writeObject(verificationOfficer);  // Write the VerificationOfficer object
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            try {
+                if (oos != null) {
+                    oos.close();  // Close the ObjectOutputStream
+                }
+            } catch (IOException ex) {
+                System.out.println("Error closing the stream: " + ex.getMessage());
+            }
+        }
+    }
+
+
 }

@@ -6,24 +6,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="530.0" prefWidth="562.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.Goal8RequestNIDCorrectionController">
+<AnchorPane prefHeight="413.0" prefWidth="433.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.Goal8RequestNIDCorrectionController">
 
-    <Label layoutX="32.0" layoutY="295.0" prefHeight="26.0" prefWidth="194.0" text="Document Format: PDF/JPG only" />
+     <!-- NID Number Label and TextField -->
+     <Label layoutX="35.0" layoutY="123.0" text="Enter Your NID Number:" />
+     <TextField fx:id="nidTextField" layoutX="36.0" layoutY="147.0" prefHeight="26.0" prefWidth="315.0" promptText="Enter NID Number" />
 
-    <Label layoutX="33.0" layoutY="333.0" prefHeight="26.0" prefWidth="184.0" text="Ensure correctness of entered data" />
-    <Label fx:id="confirmationMessageLabel" layoutX="43.0" layoutY="429.0" prefHeight="26.0" prefWidth="150.0" text="Confirmation Message">
-      <font>
-         <Font name="System Italic" size="12.0" />
-      </font></Label>
-     <Label layoutX="32.0" layoutY="109.0" prefHeight="26.0" prefWidth="120.0" text="Enter NID Number:" />
-     <TextField fx:id="nidNumberTextField" layoutX="152.0" layoutY="109.0" promptText="Enter your NID number" />
+     <!-- Details to be Corrected Label and TextField -->
+     <Label layoutX="40.0" layoutY="192.0" text="Enter Details to Correct:" />
+     <TextField fx:id="detailsTextField" layoutX="40.0" layoutY="216.0" prefHeight="26.0" prefWidth="315.0" promptText="Enter the details to be corrected" />
 
-     <Label layoutX="32.0" layoutY="151.0" prefHeight="26.0" prefWidth="173.0" text="Enter the details to be corrected:" />
-     <TextField fx:id="incorrectDetailsTextField" layoutX="233.0" layoutY="151.0" promptText="Enter incorrect details" />
-     <Label layoutX="33.0" layoutY="203.0" prefHeight="26.0" prefWidth="376.0" text="Upload Supporting Documents (e.g., Affidavit, Legal Proof):" />
-     <Button layoutX="275.0" layoutY="239.0" onAction="#fileUploadButtonOnAction" text="Upload Document" />
-     <Button layoutX="32.0" layoutY="369.0" onAction="#submitButtonOnAction" text="Submit Correction Request" />
-   <Label layoutX="172.0" layoutY="46.0" prefHeight="26.0" prefWidth="194.0" text="Request NID Card Correction">
+     <!-- Submit Button -->
+     <Button layoutX="214.0" layoutY="280.0" onAction="#submitButtonOnAction" prefHeight="26.0" prefWidth="163.0" text="Submit Correction Request" />
+   <Label layoutX="129.0" layoutY="47.0" prefHeight="26.0" prefWidth="163.0" text="Nid Correction Request">
       <font>
          <Font name="System Bold" size="14.0" />
       </font>
