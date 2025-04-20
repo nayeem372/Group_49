@@ -1,10 +1,13 @@
 package cse213.final_project.Nayeem;
 
+import cse213.final_project.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+
+import java.io.IOException;
 
 public class SaveToBinController
 {
@@ -28,6 +31,8 @@ public class SaveToBinController
     private TableColumn fullNameCol;
     @javafx.fxml.FXML
     private Label statusLabel;
+    @javafx.fxml.FXML
+    private Button saveButton1;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -35,5 +40,11 @@ public class SaveToBinController
 
     @javafx.fxml.FXML
     public void SaveToBinOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void backOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/dataEntryDashboard.fxml", actionEvent); {
+        }
     }
 }
