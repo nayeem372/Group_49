@@ -29,23 +29,16 @@ public class Goal3NIDApplicationStatusController
     @javafx.fxml.FXML
     public void checkStatusButtonOnAction(ActionEvent actionEvent) {
         String applicationNumber = applicationNumberField.getText();
-
-        // Check the application status by simulating a database lookup
         String applicationStatus = getApplicationStatus(applicationNumber);
-
-        // If the application status is found, display it
         if (applicationStatus != null) {
-            statusLabel.setText(applicationStatus);  // Show the current status
+            statusLabel.setText(applicationStatus);
             massageTextlabel.setText("You will be notified via SMS/email if the application is updated.");
         } else {
-            // If the status is not found, display an error message
             statusLabel.setText("Not Found");
             massageTextlabel.setText("No application found for this number. Please try again.");
         }
     }
     private String getApplicationStatus(String applicationNumber) {
-        // Example simulation logic: you would query the database with the application number
-        // Here, we'll just simulate different statuses based on the application number
         if (applicationNumber.equals("12345")) {
             return "Under Review";
         } else if (applicationNumber.equals("67890")) {

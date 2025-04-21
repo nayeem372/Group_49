@@ -21,15 +21,15 @@ public class FraudCaseController
     @javafx.fxml.FXML
     private Label reviewLabel;
     @javafx.fxml.FXML
-    private TableColumn statusTableColumn;
+    private TableColumn<FraudCaseController,String> statusTableColumn;
     @javafx.fxml.FXML
-    private TableView flaggedApplicationsTableView;
+    private TableView<String> flaggedApplicationsTableView;
     @javafx.fxml.FXML
-    private TableColumn idTableColumn;
+    private TableColumn<FraudCaseController,String> idTableColumn;
     @javafx.fxml.FXML
-    private TableColumn fraudTypeTableColumn;
+    private TableColumn<FraudCaseController,String> fraudTypeTableColumn;
     @javafx.fxml.FXML
-    private TableColumn nameTableColumn;
+    private TableColumn<FraudCaseController,String> nameTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

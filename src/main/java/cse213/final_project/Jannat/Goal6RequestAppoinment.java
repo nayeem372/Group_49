@@ -32,20 +32,6 @@ public class Goal6RequestAppoinment
 
     @javafx.fxml.FXML
     public void ConfirmAppointmentButtonOnAction(ActionEvent actionEvent) {
-        String selectedDate = dateForVaricationDatePicker.getValue().toString();
-        String selectedTimeSlot = timeSlotComboBox.getValue();
 
-        if (selectedDate != null && selectedTimeSlot != null) {
-
-            if (selectedTimeSlot.equals("9:00 AM - 11:00 AM")) {
-                slotAvailabilityLabel.setText("Available");
-                confirmationMessageLabel.setText("Appointment Confirmed! Appointment ID: A123");
-            } else {
-                slotAvailabilityLabel.setText("Slot Taken");
-                confirmationMessageLabel.setText("Please select a different time slot.");
-            }
-        } else {
-            slotAvailabilityLabel.setText("Please select a date and time.");
-        }
     }
 }

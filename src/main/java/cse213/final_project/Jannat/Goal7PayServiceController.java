@@ -28,9 +28,7 @@ public class Goal7PayServiceController
 
             if (cardNumber.length() <= 10) {
                 String amount = amountTextField.getText();
-
-                confirmationMessageLabel.setText("Payment of " + amount + " Taka successful.");
-
+                confirmationMessageLabel.setText("Payment of " + amount);
                 System.out.println("Payment processed for card: " + cardNumber + " for amount: " + amount + " Taka.");
             } else {
                 confirmationMessageLabel.setText("Invalid card number. It should be 10 digits or less.");

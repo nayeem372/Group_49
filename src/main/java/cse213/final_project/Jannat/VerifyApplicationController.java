@@ -46,8 +46,6 @@ public class VerifyApplicationController
         String applicantName = applicantNameTextField.getText();
         String applicantAddress = addressTextField.getText();
         String applicantDOB = dobDatePicker.getValue() != null ? dobDatePicker.getValue().toString() : "";
-
-        // Check if any required field is empty
         if (applicantName.isEmpty() || applicantAddress.isEmpty() || applicantDOB.isEmpty()) {
             statusLabel.setText("Application is incomplete. Missing information.");
         } else {
@@ -55,9 +53,6 @@ public class VerifyApplicationController
         }
 
     }
-
-
-
 
     @javafx.fxml.FXML
     public void checkDocumentsButtonOnAction(ActionEvent actionEvent) {

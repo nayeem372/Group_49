@@ -7,7 +7,7 @@ import org.w3c.dom.Text;
 public class RequestAdditionalInfoController
 {
     @javafx.fxml.FXML
-    private ComboBox missingInfoComboBox;
+    private ComboBox<String> missingInfoComboBox;
     @javafx.fxml.FXML
     private Label identifyLabel;
     @javafx.fxml.FXML
