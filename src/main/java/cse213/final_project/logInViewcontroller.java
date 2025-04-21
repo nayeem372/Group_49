@@ -80,7 +80,7 @@ public class logInViewcontroller
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/CitizenDashboardController.fxml"));
                     Parent root = loader.load();
                     CitizenDashboardController controller = loader.getController();
-                    controller.setUser(generalCitizen); // Pass the General Citizen user
+                    controller.setUser(generalCitizen);
                     Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root);
                     stage.setScene(scene);
