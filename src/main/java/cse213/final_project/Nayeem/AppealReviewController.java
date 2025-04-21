@@ -2,49 +2,49 @@ package cse213.final_project.Nayeem;
 
 import cse213.final_project.SceneSwitcher;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
-public class SaveToBinController
+public class AppealReviewController
 {
     @javafx.fxml.FXML
-    private TableColumn phoneCol;
+    private TableColumn appelIdCol;
     @javafx.fxml.FXML
-    private TableColumn fatherNameCol;
+    private TextField appealIdField;
     @javafx.fxml.FXML
-    private TableColumn dobCol;
-    @javafx.fxml.FXML
-    private TableView applicantTable;
+    private TableView tableView;
     @javafx.fxml.FXML
     private TableColumn emailCol;
     @javafx.fxml.FXML
-    private TableColumn motherNameCol;
+    private TableColumn applicantNameCol;
     @javafx.fxml.FXML
-    private TableColumn genderCol;
+    private TableColumn pNCol;
     @javafx.fxml.FXML
-    private Button saveButton;
+    private TextField applicantNameField;
     @javafx.fxml.FXML
-    private TableColumn fullNameCol;
+    private TextArea appealReasonField;
     @javafx.fxml.FXML
-    private Label statusLabel;
-    @javafx.fxml.FXML
-    private Button saveButton1;
+    private TableColumn appealReasonCol;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void SaveToBinOnAction(ActionEvent actionEvent) {
+    public void generateReportOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void reprocessOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void backOnAction(ActionEvent actionEvent)throws IOException {
-        SceneSwitcher.switchTo("Nayeem/dataEntryDashboard.fxml", actionEvent); {
+        SceneSwitcher.switchTo("Nayeem/ApprovalOfficerDashboard.fxml", actionEvent); {
         }
     }
 }

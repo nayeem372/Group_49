@@ -1,8 +1,16 @@
 package cse213.final_project.Nayeem;
 
-import java.time.LocalDate;
+import javafx.beans.InvalidationListener;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
 
-public class Applicant {
+import java.time.LocalDate;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+public class ManualApplicant {
     private String fullName;
     private String fatherName;
     private String motherName;
@@ -10,7 +18,7 @@ public class Applicant {
     private LocalDate dateOfBirth;
     private String phoneNumber;
     private String emailAddress;
-    private String ApplicantId;
+    private Long ApplicantId;
     private String division;
     private String district;
     private String upozila;
@@ -18,7 +26,7 @@ public class Applicant {
     private String villageOrWard;
     private Integer postalCode;
 
-    public Applicant(String applicantId, LocalDate dateOfBirth, String district, String division, String emailAddress, String fatherName, String fullName, String gender, String motherName, String phoneNumber, Integer postalCode, String union, String upozila, String villageOrWard) {
+    public ManualApplicant(Long applicantId, LocalDate dateOfBirth, String district, String division, String emailAddress, String fatherName, String fullName, String gender, String motherName, String phoneNumber, Integer postalCode, String union, String upozila, String villageOrWard) {
         ApplicantId = applicantId;
         this.dateOfBirth = dateOfBirth;
         this.district = district;
@@ -35,11 +43,11 @@ public class Applicant {
         this.villageOrWard = villageOrWard;
     }
 
-    public String getApplicantId() {
+    public Long getApplicantId() {
         return ApplicantId;
     }
 
-    public void setApplicantId(String applicantId) {
+    public void setApplicantId(Long applicantId) {
         ApplicantId = applicantId;
     }
 
@@ -149,15 +157,15 @@ public class Applicant {
 
     @Override
     public String toString() {
-        return "Applicant{" +
-                "ApplicantId='" + ApplicantId + '\'' +
-                ", fullName='" + fullName + '\'' +
+        return "ManualApplicant{" +
+                "fullName='" + fullName + '\'' +
                 ", fatherName='" + fatherName + '\'' +
                 ", motherName='" + motherName + '\'' +
                 ", gender='" + gender + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
+                ", ApplicantId=" + ApplicantId +
                 ", division='" + division + '\'' +
                 ", district='" + district + '\'' +
                 ", upozila='" + upozila + '\'' +

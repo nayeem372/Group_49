@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="548.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.DashboardController">
+<AnchorPane prefHeight="548.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.CitizenDashboardController">
     <Label layoutX="150.0" layoutY="40.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="General Citizen Dashboard" />
 
     <Button layoutX="43.0" layoutY="96.0" onAction="#applyForNewNIDButtonOnAction" prefHeight="26.0" prefWidth="278.0" text="Apply for a new NID registration" />
@@ -22,4 +22,12 @@
     <Button layoutX="43.0" layoutY="396.0" onAction="#payServiceFeesButtonOnAction" prefHeight="26.0" prefWidth="284.0" text="Pay service fees online" />
 
     <Button fx:id="requestCorrectionNIDButton" layoutX="43.0" layoutY="446.0" onAction="#requestCorrectionNIDButtonOnAction" prefHeight="26.0" prefWidth="284.0" text="Request NID card in case of correction" />
+    <Label layoutX="305.0" layoutY="85.0" prefHeight="18.0" prefWidth="43.0" text="Name:" />
+    <Label layoutX="305.0" layoutY="120.0" prefHeight="18.0" prefWidth="43.0" text="Id:" />
+    <Label layoutX="305.0" layoutY="164.0" prefHeight="18.0" prefWidth="43.0" text="Email:" />
+    <Label layoutX="305.0" layoutY="213.0" prefHeight="18.0" prefWidth="90.0" text="Phone Number:" />
+    <Label fx:id="nameLabel" layoutX="395.0" layoutY="86.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="emailLabel" layoutX="395.0" layoutY="165.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="idLabel" layoutX="395.0" layoutY="121.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
+    <Label fx:id="pNLabel" layoutX="395.0" layoutY="214.0" prefHeight="17.0" prefWidth="117.0" text="Label" />
 </AnchorPane>

@@ -1,8 +1,11 @@
 package cse213.final_project.Nayeem;
 
+import cse213.final_project.SceneSwitcher;
 import cse213.final_project.User;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
+
+import java.io.IOException;
 
 public class ApprovalOfficerDashboardController
 {
@@ -20,35 +23,51 @@ public class ApprovalOfficerDashboardController
     public void initialize() {
     }
     @javafx.fxml.FXML
-    public void coordinateUnclearCasesOnAction(ActionEvent actionEvent) {
+    public void coordinateUnclearCasesOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Nayeem/VerificationWork.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
-    public void reviewFlaggedCasesOnAction(ActionEvent actionEvent) {
+    public void reviewFlaggedCasesOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/FlaggedCaseReview.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
-    public void maintainApprovalLogsOnAction(ActionEvent actionEvent) {
+    public void maintainApprovalLogsOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/ApprovalAuditLogs.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
-    public void approveFinalNIDOnAction(ActionEvent actionEvent) {
+    public void approveFinalNIDOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/ApprovalFinalCheck.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
-    public void providePrintingAuthorizationOnAction(ActionEvent actionEvent) {
+    public void providePrintingAuthorizationOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/printingAuthorization.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
-    public void appealsOnAction(ActionEvent actionEvent) {
+    public void appealsOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/AppealReview.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
-    public void ensureApplicantInfoCorrectOnAction(ActionEvent actionEvent) {
+    public void ensureApplicantInfoCorrectOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/ApplicantDataVerification.fxml", actionEvent); {
+        }
     }
 
     @javafx.fxml.FXML
-    public void followUpPendingApplicationsOnAction(ActionEvent actionEvent) {
+    public void followUpPendingApplicationsOnAction(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("Nayeem/PendingApplication.fxml", actionEvent); {
+        }
     }
     public void setUser(User user) {
         this.user = user;

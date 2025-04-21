@@ -1,5 +1,9 @@
 package cse213.final_project;
 
+import cse213.final_project.Jannat.CitizenDashboardController;
+import cse213.final_project.Jannat.GeneralCitizen;
+import cse213.final_project.Jannat.VerificationOfficer;
+import cse213.final_project.Jannat.VerificationOfficerDashboardController;
 import cse213.final_project.Nayeem.ApprovalOfficer;
 import cse213.final_project.Nayeem.ApprovalOfficerDashboardController;
 import cse213.final_project.Nayeem.DataEntryDashboardController;
@@ -16,10 +20,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.util.Objects;
 
 public class logInViewcontroller
@@ -71,14 +72,15 @@ public class logInViewcontroller
                 }
             }
         }
-        else if (Integer.toString(id).length() == 11) {
-            ObservableList<ApprovalOfficer> AppOfficerObservableList = this.readAppOfficer() ;
-            for(ApprovalOfficer AppOfficer : AppOfficerObservableList) {
-                if (AppOfficer.getId() == id && Objects.equals(AppOfficer.getPassword(), password)) {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/DashboardController.fxml"));
+        else if (Long.toString(id).length() == 10) {
+            ObservableList<GeneralCitizen> generalCitizenObservableList = this.readGeneralCitizen();
+            for (GeneralCitizen generalCitizen : generalCitizenObservableList) {
+                if (generalCitizen.getId().equals(String.valueOf(id)) && Objects.equals(generalCitizen.getPassword(), password)) {
+                    // Load General Citizen Dashboard
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/CitizenDashboardController.fxml"));
                     Parent root = loader.load();
-                    DataEntryDashboardController controller = loader.getController();
-                    controller.setUser(AppOfficer);
+                    CitizenDashboardController controller = loader.getController();
+                    controller.setUser(generalCitizen); // Pass the General Citizen user
                     Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root);
                     stage.setScene(scene);
@@ -88,13 +90,14 @@ public class logInViewcontroller
             }
         }
         else if (Integer.toString(id).length() == 4) {
-            ObservableList<ApprovalOfficer> AppOfficerObservableList = this.readAppOfficer() ;
-            for(ApprovalOfficer AppOfficer : AppOfficerObservableList) {
-                if (AppOfficer.getId() == id && Objects.equals(AppOfficer.getPassword(), password)) {
+            ObservableList<VerificationOfficer> verificationOfficerObservableList = this.readVerificationOfficer();
+            for (VerificationOfficer verificationOfficer : verificationOfficerObservableList) {
+                if (verificationOfficer.getId().equals(Integer.toString(id)) && Objects.equals(verificationOfficer.getPassword(), password)) {
+                    // Load Verification Officer Dashboard
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/VerificationOfficerDashboardController.fxml"));
                     Parent root = loader.load();
-                    DataEntryDashboardController controller = loader.getController();
-                    controller.setUser(AppOfficer);
+                    VerificationOfficerDashboardController controller = loader.getController();
+                    controller.setUser(verificationOfficer);
                     Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root);
                     stage.setScene(scene);
@@ -122,7 +125,7 @@ public class logInViewcontroller
         ObjectInputStream ois = null;
 
         try {
-            f = new File("DataEntryOperator.bin");
+            f = new File("DataEntryOp.bin");
             fis = new FileInputStream(f);
             ois = new ObjectInputStream(fis);
             DataEntryOperator DataEntry;
@@ -153,7 +156,7 @@ public class logInViewcontroller
         ObjectInputStream ois = null;
 
         try {
-            f = new File("AppOfficer.bin");
+            f = new File("ApOfficer.bin");
             fis = new FileInputStream(f);
             ois = new ObjectInputStream(fis);
             ApprovalOfficer AppOfficer;
@@ -177,6 +180,71 @@ public class logInViewcontroller
         }
         return AppOfficerObservableList ;
     }
+
+    public ObservableList<GeneralCitizen> readGeneralCitizen() {
+        ObservableList<GeneralCitizen> generalCitizenObservableList = FXCollections.observableArrayList();
+        File f = null;
+        FileInputStream fis = null;
+        ObjectInputStream ois = null;
+        try {
+            f = new File("GeneralCitizenData.bin");
+            fis = new FileInputStream(f);
+            ois = new ObjectInputStream(fis);
+            GeneralCitizen generalCitizen;
+            while (true) {
+                try {
+                    generalCitizen = (GeneralCitizen) ois.readObject();
+                    generalCitizenObservableList.add(generalCitizen);
+                } catch (EOFException e) {
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            try {
+                if (ois != null) ois.close();
+            } catch (IOException ex) {
+                System.out.println("External Error: " + ex.getMessage());
+            }
+        }
+        return generalCitizenObservableList;
+    }
+
+
+    public ObservableList<VerificationOfficer> readVerificationOfficer() {
+        ObservableList<VerificationOfficer> verificationOfficerObservableList = FXCollections.observableArrayList();
+        File f = null;
+        FileInputStream fis = null;
+        ObjectInputStream ois = null;
+        try {
+            f = new File("VerificationOfficerData.bin");
+            fis = new FileInputStream(f);
+            ois = new ObjectInputStream(fis);
+            VerificationOfficer verificationOfficer;
+            while (true) {
+                try {
+                    verificationOfficer = (VerificationOfficer) ois.readObject();
+                    verificationOfficerObservableList.add(verificationOfficer);
+                } catch (EOFException e) {
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            try {
+                if (ois != null) ois.close();
+            } catch (IOException ex) {
+                System.out.println("External Error: " + ex.getMessage());
+            }
+        }
+        return verificationOfficerObservableList;
+    }
+
+
+
+
 
 
 
