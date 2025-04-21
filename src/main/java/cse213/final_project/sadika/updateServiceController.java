@@ -11,8 +11,6 @@ public class updateServiceController
     @javafx.fxml.FXML
     private ComboBox statusComboBox;
     @javafx.fxml.FXML
-    private Label confirmationLabel;
-    @javafx.fxml.FXML
     private TextArea requestDetailsArea;
     @javafx.fxml.FXML
     private TextField nidField;

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="710.0" prefWidth="636.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.RequestAdditionalInfoController">
+<AnchorPane prefHeight="710.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.RequestAdditionalInfoController">
 
     <!-- Title Label -->
     <Text fx:id="titleLabel" layoutX="99.0" layoutY="85.823828125" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Request Additional Information from Applicant" wrappingWidth="419.3569030761719" AnchorPane.leftAnchor="99.0" AnchorPane.topAnchor="66.0" />
