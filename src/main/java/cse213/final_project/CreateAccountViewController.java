@@ -183,18 +183,16 @@ public class CreateAccountViewController
 
         try {
             f = new File("GeneralCitizenData.bin");
-            if (f.exists()) {
-                fos = new FileOutputStream(f, true); // true for append mode
-                oos = new ObjectOutputStream(fos) {
-                    // This overrides the default constructor to allow appending
-                    protected void writeStreamHeader() throws IOException {
-                        // Do not write a header for append mode
-                    }
-                };
-            } else {
+            if(f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);
+//                oos = new ObjectOutputStream(fos) ;
+            }
+            else{
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
+
 
             oos.writeObject(generalCitizen);  // Write the GeneralCitizen object
         } catch (Exception e) {
@@ -217,18 +215,16 @@ public class CreateAccountViewController
 
         try {
             f = new File("VerificationOfficerData.bin");
-            if (f.exists()) {
-                fos = new FileOutputStream(f, true); // true for append mode
-                oos = new ObjectOutputStream(fos) {
-                    // Override the default constructor to allow appending
-                    protected void writeStreamHeader() throws IOException {
-                        // Do not write a header for append mode
-                    }
-                };
-            } else {
+            if(f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);
+//                oos = new ObjectOutputStream(fos) ;
+            }
+            else{
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
+
 
             oos.writeObject(verificationOfficer);  // Write the VerificationOfficer object
         } catch (Exception e) {
