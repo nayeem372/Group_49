@@ -75,7 +75,7 @@ public class CreateAccountViewController
         }
 
         if (userType.equals("General Citizen")) {
-            id = random.nextLong(10000000000L, 999999999L);
+            id = random.nextLong(1000000000L, 9999999999L);
             GeneralCitizen generalCitizen = new GeneralCitizen(address, dob, email,id, name, password, pN, userType);
             showTA.setText(generalCitizen.toString());
             this.writeGeneralCitizen(generalCitizen);
@@ -83,7 +83,7 @@ public class CreateAccountViewController
         }
 
         else if (userType.equals("Verification Officer")) {
-            id = random.nextLong(10000L, 9999L);
+            id = random.nextLong(1000L, 9999L);
             VerificationOfficer verificationOfficer = new VerificationOfficer(address, dob, email, id, name, password, pN, userType);
             showTA.setText(verificationOfficer.toString());
             this.writeVerificationOfficer(verificationOfficer);
