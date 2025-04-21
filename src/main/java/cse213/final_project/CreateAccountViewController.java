@@ -183,15 +183,12 @@ public class CreateAccountViewController
 
         try {
             f = new File("GeneralCitizenData.bin");
-            if (f.exists()) {
-                fos = new FileOutputStream(f, true); // true for append mode
-                oos = new ObjectOutputStream(fos) {
-
-                    protected void writeStreamHeader() throws IOException {
-
-                    }
-                };
-            } else {
+            if(f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);
+//                oos = new ObjectOutputStream(fos) ;
+            }
+            else{
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
@@ -217,18 +214,16 @@ public class CreateAccountViewController
 
         try {
             f = new File("VerificationOfficerData.bin");
-            if (f.exists()) {
-                fos = new FileOutputStream(f, true);
-                oos = new ObjectOutputStream(fos) {
-
-                    protected void writeStreamHeader() throws IOException {
-
-                    }
-                };
-            } else {
+            if(f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);
+//                oos = new ObjectOutputStream(fos) ;
+            }
+            else{
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
+
 
             oos.writeObject(verificationOfficer);
         } catch (Exception e) {
