@@ -1,8 +1,7 @@
 package cse213.final_project.sadika;
 
 import javafx.event.ActionEvent;
-
-import java.awt.*;
+import javafx.scene.control.TextArea;
 
 public class guideApplicantsController
 {

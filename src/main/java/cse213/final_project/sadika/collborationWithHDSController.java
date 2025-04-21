@@ -1,12 +1,10 @@
 package cse213.final_project.sadika;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 
-import java.awt.*;
-
-public class collaborateWithHelpDeskController
+public class collborationWithHDSController
 {
-
     @javafx.fxml.FXML
     private TextArea messageTextArea;
 
