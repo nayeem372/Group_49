@@ -19,30 +19,21 @@
       <font>
          <Font name="System Bold" size="18.0" />
       </font></Label>
-
-    <!-- Application Selection Section -->
     <Label layoutX="20" layoutY="60" text="Select Application to Review:" />
     <ComboBox fx:id="applicationComboBox" layoutX="180" layoutY="60" prefHeight="4.0" prefWidth="200">
-        <!-- Application items will be populated dynamically -->
     </ComboBox>
 
-    <!-- Flagging History Display -->
     <Label layoutX="41.0" layoutY="100.0" text="Flagging History:" />
 
 
     <Label layoutX="25.0" layoutY="211.0" text="Previous Notes  Status:" />
     <TextArea fx:id="previousNotesTextArea" editable="false" layoutX="182.0" layoutY="211.0" prefHeight="65.0" prefWidth="355.0" />
 
-    <!-- Document Verification Section -->
     <Label layoutX="16.0" layoutY="295.0" prefHeight="18.0" prefWidth="344.0" text="Attached Documents (e.g., Birth Certificate, Proof of Residence):" />
     <TextField fx:id="documentTextField" layoutX="364.0" layoutY="291.0" prefWidth="200" />
     <Button fx:id="browseDocumentButton" layoutX="499.0" layoutY="326.0" onAction="#browseDocumentButtonOnAction" text="Browse" />
-
-    <!-- Document Consistency Check Section -->
     <Label layoutX="25.0" layoutY="360.0" text="Compare with Official Database:" />
     <CheckBox fx:id="compareWithDatabaseCheckBox" layoutX="235.0" layoutY="360.0" text="Check Consistency" />
-
-    <!-- Decision Section -->
     <Label layoutX="25.0" layoutY="400.0" text="Final Decision:" />
     <ComboBox fx:id="decisionComboBox" layoutX="185.0" layoutY="400.0" prefWidth="200">
         <items>
@@ -56,11 +47,7 @@
 
     <Label layoutX="25.0" layoutY="440.0" text="Comments for Final Decision:" />
     <TextArea fx:id="commentsTextArea" layoutX="185.0" layoutY="440.0" prefHeight="82.0" prefWidth="355.0" />
-
-    <!-- Submit Button -->
     <Button fx:id="submitReviewButton" layoutX="188.0" layoutY="531.0" onAction="#submitReviewButtonOnAction" text="Submit Review" />
-
-    <!-- Notification Section -->
     <Label layoutX="36.0" layoutY="568.0" text="Notification to Applicant:" />
     <TextArea fx:id="notificationTextArea" editable="false" layoutX="185.0" layoutY="568.0" prefHeight="82.0" prefWidth="362.0" />
    <TableView fx:id="flaggingHistoryTableView" layoutX="185.0" layoutY="100.0" prefHeight="99.0" prefWidth="355.0">

@@ -35,13 +35,10 @@
 
     <Label layoutX="35.0" layoutY="420.0" text="Date of Birth:" />
     <Label fx:id="verifiedDOB" layoutX="170.0" layoutY="420.0" prefHeight="20.0" prefWidth="36.0" style="-fx-font-size: 14px;" text="N/A" />
-
     <Label layoutX="35.0" layoutY="460.0" text="Registration Status:" />
     <Label fx:id="verifiedStatus" layoutX="170.0" layoutY="460.0" style="-fx-font-size: 14px;" text="N/A" />
-
     <Button layoutX="170.0" layoutY="500.0" onAction="#recheckInformationButtonOnAction" prefHeight="26.0" prefWidth="136.0" text="Recheck Information" />
     <Button layoutX="170.0" layoutY="540.0" onAction="#contactSupportButtonOnAction" text="Contact Support" />
-
     <Label fx:id="errorMessageLabel" layoutX="170.0" layoutY="580.0" prefHeight="20.0" prefWidth="123.0" style="-fx-font-size: 14px; color: red;" text="Error: Invalid NID" />
 
 </AnchorPane>

@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 
 public class Goal2UpdateInformationController
 {
+
     @javafx.fxml.FXML
     private TextField phoneNumberTextField;
     @javafx.fxml.FXML
@@ -64,5 +65,13 @@ public class Goal2UpdateInformationController
             System.out.println("Please complete all required fields.");
         }
 
+    }
+
+    @Deprecated
+    public void requestDetailsButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void checkStatusButtonOnAction(ActionEvent actionEvent) {
     }
 }

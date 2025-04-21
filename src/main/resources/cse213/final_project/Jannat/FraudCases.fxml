@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="694.0" prefWidth="654.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.FraudCaseController">
+<AnchorPane prefHeight="694.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.Jannat.FraudCaseController">
 
     <Text fx:id="titleLabel" layoutX="78.0" layoutY="45.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Collaborate with Law Enforcement for Identity Fraud Cases" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="25.576171875" />
 
@@ -42,7 +42,7 @@
     <Label fx:id="sendToAuthoritiesLabel" layoutX="20.0" layoutY="561.0" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Step 4: Send Case to Authorities" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="561.0" />
 
     <Button layoutX="20.0" layoutY="590.0" onAction="#sendCaseButtonOnAction" text="Send Case" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="590.0" />
-    <Text fx:id="lockMessage" layoutX="23.0" layoutY="644.0" style="-fx-font-size: 12; -fx-text-fill: red;" text="Applicant's U-NID profile is temporarily locked until cleared." AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="631.0" />
+    <Text  layoutX="23.0" layoutY="644.0" style="-fx-font-size: 12; -fx-text-fill: red;" text="Applicant's U-NID profile is temporarily locked until cleared." AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="631.0" />
    <TextField layoutX="27.0" layoutY="282.0" prefHeight="70.0" prefWidth="573.0" promptText="Review flagged applications..." />
    <TextField layoutX="30.0" layoutY="393.0" prefHeight="70.0" prefWidth="573.0" promptText="Enter summary of the fraud issue..." />
 

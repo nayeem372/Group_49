@@ -8,8 +8,6 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="444.0" prefWidth="476.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.Goal7PayServiceController">
-
-    <!-- Event-4: Confirmation -->
     <Label fx:id="confirmationMessageLabel" layoutX="49.0" layoutY="326.0" prefHeight="26.0" prefWidth="158.0" text="Payment Confirmation" />
      <Label layoutX="34.0" layoutY="185.0" prefHeight="26.0" prefWidth="150.0" text="Enter Credit Card Number:" />
      <TextField fx:id="creditCardTextField" layoutX="235.0" layoutY="186.0" promptText="Enter your card number" />

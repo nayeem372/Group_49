@@ -13,7 +13,6 @@
 
 <AnchorPane prefHeight="528.0" prefWidth="594.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.VerifyApplicationController">
     <children>
-        <!-- ComboBox for selecting application -->
         <ComboBox fx:id="applicationComboBox" layoutX="209.0" layoutY="102.0" prefWidth="200">
             <items>
                 <FXCollections fx:factory="observableArrayList">
@@ -24,7 +23,6 @@
             </items>
         </ComboBox>
 
-        <!-- Labels for displaying application details -->
         <Label layoutX="49.0" layoutY="152.0" text="Applicant Name:" />
         <Label fx:id="applicantNameLabel" layoutX="180" layoutY="70" />
 
@@ -33,22 +31,12 @@
 
         <Label layoutX="49.0" layoutY="232.0" text="Address:" />
         <Label fx:id="applicantAddressLabel" layoutX="180" layoutY="150" />
-
-        <!-- Button to check if required documents are uploaded -->
         <Button layoutX="209.0" layoutY="282.0" onAction="#checkDocumentsButtonOnAction" text="Check Documents" />
-
-        <!-- Labels for Document Status -->
         <Label layoutX="49.0" layoutY="322.0" text="Document Status:" />
         <CheckBox fx:id="birthCertificateCheckBox" layoutX="209.0" layoutY="322.0" text="Birth Certificate" />
         <CheckBox fx:id="proofOfAddressCheckBox" layoutX="209.0" layoutY="352.0" text="Proof of Address" />
-
-        <!-- Button to mark application as complete or incomplete -->
         <Button layoutX="209.0" layoutY="392.0" onAction="#markApplicationCompleteButtonOnAction" text="Mark as Complete/Incomplete" />
-
-        <!-- Submit Button -->
         <Button layoutX="209.0" layoutY="432.0" onAction="#submitReviewButtonOnAction" text="Submit Review" />
-
-        <!-- Label to show the review status -->
         <Label fx:id="statusLabel" layoutX="180" layoutY="380" />
       <Label layoutX="49.0" layoutY="106.0" prefHeight="18.0" prefWidth="154.0" text="Application Selection:" />
       <TextField fx:id="applicantNameTextField" layoutX="209.0" layoutY="148.0" prefHeight="26.0" prefWidth="200.0" />
