@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.sadika.updateServiceController">
+    <children>
+        <VBox alignment="TOP_LEFT" layoutX="10.0" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="15" left="15" right="15" top="15" />
+            </padding>
+
+            <Label prefHeight="23.0" prefWidth="234.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Update Service Request" />
+
+            <!-- Event 1: Receive service request -->
+            <Label text="Service Request Details:" />
+            <TextArea fx:id="requestDetailsArea" prefRowCount="3" promptText="Enter the citizen's service request..." />
+
+            <!-- Event 2: Verify user identity -->
+            <Label text="Citizen NID Number or Previous Application ID:" />
+            <TextField fx:id="nidField" promptText="Enter NID or Application ID" />
+
+            <Button onAction="#handleVerifyIdentity" text="Verify Identity" />
+
+            <!-- Event 3: Update Request Status -->
+            <Label text="Update Request Status:" />
+            <ComboBox fx:id="statusComboBox" promptText="Select new status">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Pending" />
+                        <String fx:value="In Progress" />
+                        <String fx:value="Resolved" />
+                        <String fx:value="Rejected" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+            <Button onAction="#handleUpdateStatus" text="Update Status" />
+
+            <!-- Event 4: Send confirmation -->
+            <Button onAction="#handleSendConfirmation" text="Send Confirmation to Citizen" />
+
+            <Label fx:id="confirmationLabel" style="-fx-text-fill: green;" text="" />
+        </VBox>
+    </children>
+</AnchorPane>

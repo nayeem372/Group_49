@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450" prefWidth="650" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.guideLostStolenNIDController">
+
+    <Label layoutX="201.0" layoutY="14.0" style="-fx-font-size: 18px;" text="Guidance on Lost/Stolen NID" />
+
+    <Label layoutX="20" layoutY="70" text="Verify User Identity:" />
+    <TextField fx:id="citizenIdTextField" layoutX="150" layoutY="65" prefWidth="300" />
+
+    <Button layoutX="470" layoutY="65" onAction="#verifyIdentityOnAction" text="Verify Identity" />
+
+    <Label layoutX="20" layoutY="120" text="Lost/Stolen NID Reporting Procedure:" />
+    <TextArea fx:id="reportProcedureTextArea" editable="false" layoutX="20" layoutY="150" prefHeight="100" prefWidth="600" wrapText="true" />
+
+    <Label layoutX="238.0" layoutY="266.0" text="Request for Duplicate NID:" />
+    <Button layoutX="215.0" layoutY="293.0" onAction="#requestDuplicateOnAction" prefWidth="220" text="Request Duplicate NID" />
+
+    <Label layoutX="20" layoutY="370" text="Processing Time and Tracking:" />
+    <TextField fx:id="processingTimeTextField" editable="false" layoutX="20" layoutY="400" prefWidth="300" promptText="Estimated Processing Time" />
+   <Button layoutX="487.0" layoutY="400.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="122.0" text="Back" />
+
+</AnchorPane>
