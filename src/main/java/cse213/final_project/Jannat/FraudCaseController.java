@@ -2,6 +2,7 @@ package cse213.final_project.Jannat;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import org.w3c.dom.Text;
 
 public class FraudCaseController
@@ -33,6 +34,12 @@ public class FraudCaseController
 
     @javafx.fxml.FXML
     public void initialize() {
+        fraudTypeComboBox.getItems().addAll("Forged Document", "Dual Identity", "False Address", "Biometric Mismatch");
+        idTableColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+        nameTableColumn.setCellValueFactory(new PropertyValueFactory<>("applicantName"));
+        fraudTypeTableColumn.setCellValueFactory(new PropertyValueFactory<>("fraudType"));
+        statusTableColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
+
     }
 
 
