@@ -76,7 +76,6 @@ public class logInViewcontroller
             ObservableList<GeneralCitizen> generalCitizenObservableList = this.readGeneralCitizen();
             for (GeneralCitizen generalCitizen : generalCitizenObservableList) {
                 if (generalCitizen.getId().equals(String.valueOf(id)) && Objects.equals(generalCitizen.getPassword(), password)) {
-                    // Load General Citizen Dashboard
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/CitizenDashboardController.fxml"));
                     Parent root = loader.load();
                     CitizenDashboardController controller = loader.getController();
@@ -93,7 +92,6 @@ public class logInViewcontroller
             ObservableList<VerificationOfficer> verificationOfficerObservableList = this.readVerificationOfficer();
             for (VerificationOfficer verificationOfficer : verificationOfficerObservableList) {
                 if (verificationOfficer.getId().equals(Integer.toString(id)) && Objects.equals(verificationOfficer.getPassword(), password)) {
-                    // Load Verification Officer Dashboard
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("Jannat/VerificationOfficerDashboardController.fxml"));
                     Parent root = loader.load();
                     VerificationOfficerDashboardController controller = loader.getController();

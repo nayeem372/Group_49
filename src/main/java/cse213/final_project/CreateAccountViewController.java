@@ -78,16 +78,16 @@ public class CreateAccountViewController
             id = random.nextLong(10000L, 99999L);
             GeneralCitizen generalCitizen = new GeneralCitizen(address, dob, email,id, name, password, pN, userType);
             showTA.setText(generalCitizen.toString());
-            this.writeGeneralCitizen(generalCitizen);  // Save the General Citizen data
-            this.writeUser(generalCitizen);  // Save the User data
+            this.writeGeneralCitizen(generalCitizen);
+            this.writeUser(generalCitizen);
         }
 
         else if (userType.equals("Verification Officer")) {
             id = random.nextLong(1000L, 9999L);
             VerificationOfficer verificationOfficer = new VerificationOfficer(address, dob, email, id, name, password, pN, userType);
             showTA.setText(verificationOfficer.toString());
-            this.writeVerificationOfficer(verificationOfficer);  // Save the Verification Officer data
-            this.writeUser(verificationOfficer);  // Save the User data
+            this.writeVerificationOfficer(verificationOfficer);
+            this.writeUser(verificationOfficer);
         }
 
 
@@ -183,24 +183,26 @@ public class CreateAccountViewController
 
         try {
             f = new File("GeneralCitizenData.bin");
-            if(f.exists()){
-                fos = new FileOutputStream(f,true);
-                oos = new AppendableObjectOutputStream(fos);
-//                oos = new ObjectOutputStream(fos) ;
-            }
-            else{
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true); // true for append mode
+                oos = new ObjectOutputStream(fos) {
+
+                    protected void writeStreamHeader() throws IOException {
+
+                    }
+                };
+            } else {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
 
-
-            oos.writeObject(generalCitizen);  // Write the GeneralCitizen object
+            oos.writeObject(generalCitizen);
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         } finally {
             try {
                 if (oos != null) {
-                    oos.close();  // Close the ObjectOutputStream
+                    oos.close();
                 }
             } catch (IOException ex) {
                 System.out.println("Error closing the stream: " + ex.getMessage());
@@ -215,24 +217,26 @@ public class CreateAccountViewController
 
         try {
             f = new File("VerificationOfficerData.bin");
-            if(f.exists()){
-                fos = new FileOutputStream(f,true);
-                oos = new AppendableObjectOutputStream(fos);
-//                oos = new ObjectOutputStream(fos) ;
-            }
-            else{
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true);
+                oos = new ObjectOutputStream(fos) {
+
+                    protected void writeStreamHeader() throws IOException {
+
+                    }
+                };
+            } else {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
 
-
-            oos.writeObject(verificationOfficer);  // Write the VerificationOfficer object
+            oos.writeObject(verificationOfficer);
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         } finally {
             try {
                 if (oos != null) {
-                    oos.close();  // Close the ObjectOutputStream
+                    oos.close();
                 }
             } catch (IOException ex) {
                 System.out.println("Error closing the stream: " + ex.getMessage());
