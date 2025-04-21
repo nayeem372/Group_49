@@ -12,7 +12,6 @@
 
 <AnchorPane prefHeight="466.0" prefWidth="546.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.Jannat.VerificationController">
     <children>
-        <!-- ComboBox for selecting application -->
         <ComboBox fx:id="applicationComboBox" layoutX="210.0" layoutY="86.0" prefWidth="200">
             <items>
                 <FXCollections fx:factory="observableArrayList">
@@ -23,26 +22,16 @@
             </items>
         </ComboBox>
 
-        <!-- Label for Applicant's Name -->
         <Label fx:id="applicantNameTextField" layoutX="33.0" layoutY="119.0" text="Applicant Name:" />
         <Label fx:id="applicantNameLabel" layoutX="180" layoutY="70" />
-
-        <!-- Label for Applicant's Date of Birth -->
         <Label layoutX="33.0" layoutY="159.0" text="Date of Birth:" />
         <Label fx:id="applicantDOBLabel" layoutX="180" layoutY="110" />
-
-        <!-- Label for Applicant's Address -->
         <Label layoutX="33.0" layoutY="199.0" text="Address:" />
         <Label fx:id="applicantAddressLabel" layoutX="180" layoutY="150" />
 
-        <!-- Button to Verify Data -->
         <Button layoutX="193.0" layoutY="249.0" onAction="#verifyDataButtonOnAction" text="Verify Data" />
-
-        <!-- Label for Data Verification Result -->
         <Label layoutX="33.0" layoutY="289.0" text="Verification Result:" />
         <Label fx:id="verificationResultLabel" layoutX="180" layoutY="240" />
-
-        <!-- ComboBox for selecting Approval Status -->
         <ComboBox fx:id="approvalComboBox" layoutX="193.0" layoutY="329.0" prefWidth="200">
             <items>
                 <FXCollections fx:factory="observableArrayList">
@@ -52,8 +41,6 @@
                 </FXCollections>
             </items>
         </ComboBox>
-
-        <!-- Button to Submit Verification Status -->
         <Button layoutX="193.0" layoutY="369.0" onAction="#submitVerificationStatusButtonOnAction" text="Submit Status" />
       <TextField fx:id="addressTextField" layoutX="157.0" layoutY="194.0" prefHeight="26.0" prefWidth="200.0" />
       <Label layoutX="28.0" layoutY="90.0" prefHeight="18.0" prefWidth="174.0" text="Select Application to Review:" />
