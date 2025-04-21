@@ -9,25 +9,41 @@ import javafx.scene.control.TextField;
 public class updateServiceController
 {
     @javafx.fxml.FXML
-    private ComboBox statusComboBox;
+    private ComboBox<String> statusComboBox;
     @javafx.fxml.FXML
-    private TextArea requestDetailsArea;
+    private TextArea requestDetailsTextArea;
     @javafx.fxml.FXML
-    private TextField nidField;
+    private TextField NIDTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleVerifyIdentity(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleSendConfirmation(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleUpdateStatus(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void backOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void updateStatusOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void verifyIdentityOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void sendConfirmationOnAction(ActionEvent actionEvent) {
     }
 }

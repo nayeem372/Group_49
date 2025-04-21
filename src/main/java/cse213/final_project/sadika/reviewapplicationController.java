@@ -7,10 +7,11 @@ import javafx.scene.control.TableView;
 
 public class reviewapplicationController
 {
+
     @javafx.fxml.FXML
-    private ComboBox statusFilterComboBox;
+    private ComboBox<String> statusComboBox;
     @javafx.fxml.FXML
-    private TableView applicationTable;
+    private TableView applicationTablevieew;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -9,7 +9,7 @@ public class updateApplicationStatusController
     @javafx.fxml.FXML
     private TextField applicationIdTextField;
     @javafx.fxml.FXML
-    private ComboBox statusComboBox;
+    private ComboBox<String> statusComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -13,16 +13,16 @@
     <Label layoutX="20" layoutY="70" text="Verify User Identity:" />
     <TextField fx:id="citizenIdTextField" layoutX="150" layoutY="65" prefWidth="300" />
 
-    <Button layoutX="470" layoutY="65" onAction="#verifyIdentityOnAction" text="Verify Identity" />
+    <Button layoutX="470" layoutY="65" onAction="#verifyIdentityOnAction" prefHeight="25.0" prefWidth="113.0" text="Verify Identity" />
 
-    <Label layoutX="20" layoutY="120" text="Lost/Stolen NID Reporting Procedure:" />
+    <Label layoutX="26.0" layoutY="125.0" text="Lost/Stolen NID Reporting Procedure:" />
     <TextArea fx:id="reportProcedureTextArea" editable="false" layoutX="20" layoutY="150" prefHeight="100" prefWidth="600" wrapText="true" />
 
     <Label layoutX="238.0" layoutY="266.0" text="Request for Duplicate NID:" />
     <Button layoutX="215.0" layoutY="293.0" onAction="#requestDuplicateOnAction" prefWidth="220" text="Request Duplicate NID" />
 
-    <Label layoutX="20" layoutY="370" text="Processing Time and Tracking:" />
-    <TextField fx:id="processingTimeTextField" editable="false" layoutX="20" layoutY="400" prefWidth="300" promptText="Estimated Processing Time" />
+    <Label layoutX="20.0" layoutY="383.0" text="Processing Time and Tracking:" />
+    <TextField fx:id="processingTimeTextField" editable="false" layoutX="20" layoutY="400" prefWidth="300" />
    <Button layoutX="487.0" layoutY="400.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="122.0" text="Back" />
 
 </AnchorPane>

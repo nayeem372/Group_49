@@ -6,8 +6,9 @@ import java.awt.*;
 
 public class collaborateWithHelpDeskController
 {
+
     @javafx.fxml.FXML
-    private TextArea messageField;
+    private TextArea messageTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {

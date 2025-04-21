@@ -5,10 +5,11 @@ import javafx.scene.control.TextArea;
 
 public class guideNIDApplicationProcessController
 {
+
     @javafx.fxml.FXML
-    private TextArea documentsChecklistArea;
+    private TextArea documentsChecklistTextArea;
     @javafx.fxml.FXML
-    private TextArea stepsOverviewArea;
+    private TextArea stepsOverviewTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {

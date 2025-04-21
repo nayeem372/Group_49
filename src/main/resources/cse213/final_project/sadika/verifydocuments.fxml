@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.verifydocumentsController">
-    <Label layoutX="20" layoutY="20" style="-fx-font-size:16px;" text="Submitted Documents" />
-    <TableView fx:id="documentTable" layoutX="20" layoutY="60" prefHeight="250" prefWidth="560" />
-    <Button fx:id="verifyButton" layoutX="20" layoutY="330" text="Verify Document" />
-    <Button fx:id="flagButton" layoutX="160" layoutY="330" text="Flag as Invalid" />
-   <Button layoutX="517.0" layoutY="330.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+    <Label layoutX="208.0" layoutY="21.0" style="-fx-font-size:16px;" text="Submitted Documents" />
+    <TableView fx:id="documentTableview" layoutX="20" layoutY="60" prefHeight="250" prefWidth="560" />
+    <Button layoutX="20" layoutY="330" onAction="#verifyOnAction" text="Verify Document" />
+    <Button layoutX="160" layoutY="330" onAction="#flagInvalidOnAction" text="Flag as Invalid" />
+   <Button layoutX="468.0" layoutY="330.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="95.0" text="Back" />
 </AnchorPane>

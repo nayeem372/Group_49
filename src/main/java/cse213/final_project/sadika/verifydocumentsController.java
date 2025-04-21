@@ -6,12 +6,9 @@ import javafx.scene.control.TableView;
 
 public class verifydocumentsController
 {
+
     @javafx.fxml.FXML
-    private Button flagButton;
-    @javafx.fxml.FXML
-    private Button verifyButton;
-    @javafx.fxml.FXML
-    private TableView documentTable;
+    private TableView documentTableview;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -19,5 +16,13 @@ public class verifydocumentsController
 
     @javafx.fxml.FXML
     public void backOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void verifyOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void flagInvalidOnAction(ActionEvent actionEvent) {
     }
 }

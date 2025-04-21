@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.registrationOfficerdasboardcontroller">
-    <Label layoutX="20" layoutY="20" style="-fx-font-size: 20px;" text="Registration Officer Dashboard" />
+    <Label layoutX="195.0" layoutY="24.0" style="-fx-font-size: 20px;" text="Registration Officer Dashboard" />
 
     <Button layoutX="20" layoutY="80" onAction="#reviewApplicationsOnAction" prefWidth="200" text="Review Applications" />
     <Button layoutX="20" layoutY="130" onAction="#verifyDocumentsOnAction" prefWidth="200" text="Verify Documents" />
@@ -15,6 +15,6 @@
     <Button layoutX="20" layoutY="330" onAction="#approveOrRejectOnAction" prefWidth="200" text="Approve or Reject Application" />
     <Button layoutX="20" layoutY="380" onAction="#complianceCheckOnAction" prefWidth="200" text="Policy Compliance Check" />
     <Button layoutX="20" layoutY="430" onAction="#guideApplicantsOnAction" prefWidth="200" text="Guide Applicants" />
-   <Button layoutX="30.0" layoutY="533.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
-   <Button layoutX="570.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutOnAction" text="Logout" />
+   <Button layoutX="30.0" layoutY="533.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="200.0" text="Back" />
+   <Button layoutX="489.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="25.0" prefWidth="138.0" text="Logout" />
 </AnchorPane>

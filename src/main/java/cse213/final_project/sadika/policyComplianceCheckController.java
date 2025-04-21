@@ -5,8 +5,9 @@ import javafx.scene.control.TextField;
 
 public class policyComplianceCheckController
 {
+
     @javafx.fxml.FXML
-    private TextField applicationIdField;
+    private TextField applicationIdTextField;
 
     @javafx.fxml.FXML
     public void initialize() {

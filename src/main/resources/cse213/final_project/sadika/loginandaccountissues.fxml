@@ -5,25 +5,25 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.sadika.loginAndAccountIssuesController">
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.loginAndAccountIssuesController">
 
-    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px;" text="Help Desk Support - Login Assistance" />
+    <Label layoutX="132.0" layoutY="22.0" style="-fx-font-size: 18px;" text="Help Desk Support - Login Assistance" />
 
     <Label layoutX="20" layoutY="70" text="Citizen ID:" />
-    <TextField fx:id="citizenIdTextField" layoutX="150" layoutY="65" prefWidth="300" />
+    <TextField fx:id="citizenIdTextField" layoutX="87.0" layoutY="66.0" prefWidth="300" />
 
-    <Button layoutX="470" layoutY="65" onAction="#verifyIdentityOnAction" text="Verify Identity" />
+    <Button layoutX="406.0" layoutY="66.0" onAction="#verifyIdentityOnAction" prefHeight="25.0" prefWidth="122.0" text="Verify Identity" />
 
-    <Label layoutX="20" layoutY="120" style="-fx-font-weight: bold;" text="Password Reset / Unlock Options" />
+    <Label layoutX="20" layoutY="120" text="Password Reset / Unlock Options" />
 
     <Button layoutX="20" layoutY="160" onAction="#resetPasswordOnAction" prefWidth="150" text="Reset Password" />
     <Button layoutX="200" layoutY="160" onAction="#unlockAccountOnAction" prefWidth="150" text="Unlock Account" />
 
-    <Label layoutX="20" layoutY="220" style="-fx-font-weight: bold;" text="MFA Assistance" />
-    <Button layoutX="20" layoutY="260" onAction="#guideMFAOnAction" prefWidth="200" text="Guide for MFA Setup" />
+    <Label layoutX="21.0" layoutY="207.0" text="MFA Assistance" />
+    <Button layoutX="11.0" layoutY="234.0" onAction="#guideMFAOnAction" prefWidth="200" text="Guide for MFA Setup" />
 
-    <Label layoutX="20" layoutY="320" style="-fx-font-weight: bold;" text="Troubleshooting" />
-    <Button layoutX="20" layoutY="350" onAction="#troubleshootOnAction" prefWidth="250" text="Provide Troubleshooting Steps" />
-   <Button layoutX="489.0" layoutY="350.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+    <Label layoutX="21.0" layoutY="288.0" text="Troubleshooting" />
+    <Button layoutX="20.0" layoutY="311.0" onAction="#troubleshootOnAction" prefWidth="250" text="Provide Troubleshooting Steps" />
+   <Button layoutX="426.0" layoutY="336.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="115.0" text="Back" />
 
 </AnchorPane>

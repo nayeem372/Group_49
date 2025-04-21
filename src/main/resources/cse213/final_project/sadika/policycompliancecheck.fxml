@@ -4,11 +4,15 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.policyComplianceCheckController">
-    <Label layoutX="20" layoutY="20" text="Policy Compliance Check" />
-    <TextField fx:id="applicationIdField" layoutX="20" layoutY="60" promptText="Application ID" />
+<AnchorPane prefHeight="350.0" prefWidth="500" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.policyComplianceCheckController">
+    <Label layoutX="143.0" layoutY="14.0" text="Policy Compliance Check">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+    <TextField fx:id="applicationIdTextField" layoutX="20" layoutY="60" prefHeight="25.0" prefWidth="225.0" />
     <Button layoutX="20" layoutY="100" onAction="#validateComplianceOnAction" text="Validate Compliance" />
-    <Button layoutX="200" layoutY="100" onAction="#escalateOnAction" text="Escalate" />
-   <Button layoutX="20.0" layoutY="193.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+    <Button layoutX="171.0" layoutY="100.0" onAction="#escalateOnAction" text="Escalate" />
+   <Button layoutX="322.0" layoutY="100.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="111.0" text="Back" />
 </AnchorPane>

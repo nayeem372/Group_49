@@ -9,9 +9,9 @@
 
 <AnchorPane prefHeight="503.0" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.answerNIDRegistrationFAQsController">
 
-    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px;" text="NID Registration - Frequently Asked Questions" />
+    <Label layoutX="109.0" layoutY="14.0" style="-fx-font-size: 18px;" text="NID Registration - Frequently Asked Questions" />
 
-    <Label layoutX="20" layoutY="330" text="Selected Question Answer:" />
+    <Label layoutX="20.0" layoutY="343.0" text="Selected Question Answer:" />
     <TextArea fx:id="FAQAnswerTextArea" editable="false" layoutX="20" layoutY="360" prefHeight="60" prefWidth="550" wrapText="true" />
 
     <Button layoutX="20" layoutY="430" onAction="#NIDFAQPageOnAction" prefWidth="250" text="Open Government NID FAQ Page" />

@@ -4,10 +4,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="350" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.guideApplicantsController">
-    <Label layoutX="20" layoutY="20" text="Guide Applicants" />
-    <TextArea fx:id="guidanceTextArea" layoutX="20" layoutY="60" prefHeight="200" prefWidth="560" promptText="Enter guidance notes here..." />
-    <Button layoutX="20" layoutY="280" onAction="#sendGuidanceOnAction" text="Send Guidance" />
-   <Button layoutX="514.0" layoutY="280.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+    <Label layoutX="226.0" layoutY="23.0" text="Guide Applicants">
+      <font>
+         <Font size="21.0" />
+      </font></Label>
+    <TextArea fx:id="guidanceTextArea" layoutX="20" layoutY="60" prefHeight="200" prefWidth="560" />
+    <Button layoutX="20" layoutY="280" onAction="#sendGuidanceOnAction" prefHeight="25.0" prefWidth="141.0" text="Send Guidance" />
+   <Button layoutX="446.0" layoutY="280.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="114.0" text="Back" />
 </AnchorPane>

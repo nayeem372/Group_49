@@ -4,18 +4,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500" prefWidth="700" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.final_project.sadika.helpDeskSupporterController">
+<AnchorPane prefHeight="605.0" prefWidth="700" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.final_project.sadika.helpDeskSupporterController">
 
-    <Label layoutX="20" layoutY="20" style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Help Desk Support Dashboard" />
+    <Label blendMode="DARKEN" layoutX="175.0" layoutY="25.0" style="-fx-font-size: 22px;" text="Help Desk Support Dashboard" textFill="#00000097" textOverrun="LEADING_WORD_ELLIPSIS" />
 
     <Button layoutX="50" layoutY="80" onAction="#assistLoginIssuesOnAction" prefHeight="40" prefWidth="250" text="Assist with Login Issues" />
     <Button layoutX="50" layoutY="140" onAction="#guideNIDApplicationProcessOnAction" prefHeight="40" prefWidth="250" text="Guide NID Application Process" />
     <Button layoutX="50" layoutY="200" onAction="#answerNIDRegistrationFAQsOnAction" prefHeight="40" prefWidth="250" text="Answer NID Registration FAQs" />
     <Button layoutX="50" layoutY="260" onAction="#lostStolenNIDOnAction" prefHeight="40" prefWidth="250" text="Guidance on Lost/Stolen NID" />
-    <Button layoutX="350" layoutY="80" onAction="#processServiceRequestsOnAction" prefHeight="40" prefWidth="250" text="Process Service Requests" />
-    <Button layoutX="350" layoutY="140" onAction="#resolveSystemErrorOnAction" prefHeight="40" prefWidth="250" text="Resolve System Error Complaints" />
-    <Button layoutX="350" layoutY="200" onAction="#trackApplicationStatusOnAction" prefHeight="40" prefWidth="250" text="Track Application Status" />
-    <Button layoutX="350" layoutY="260" onAction="#updateServiceOnAction" prefHeight="40" prefWidth="250" text="Update service " />
-   <Button layoutX="526.0" layoutY="402.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+    <Button layoutX="50.0" layoutY="320.0" onAction="#processServiceRequestsOnAction" prefHeight="40" prefWidth="250" text="Process Service Requests" />
+    <Button layoutX="50.0" layoutY="382.0" onAction="#resolveSystemErrorOnAction" prefHeight="40" prefWidth="250" text="Resolve System Error Complaints" />
+    <Button layoutX="50.0" layoutY="446.0" onAction="#trackApplicationStatusOnAction" prefHeight="40" prefWidth="250" text="Track Application Status" />
+    <Button layoutX="50.0" layoutY="506.0" onAction="#updateServiceOnAction" prefHeight="40" prefWidth="250" text="Update service " />
+   <Button layoutX="481.0" layoutY="559.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="25.0" prefWidth="144.0" text="Back" />
 
 </AnchorPane>
